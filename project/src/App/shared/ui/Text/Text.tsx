@@ -3,7 +3,7 @@ import cls from './Text.module.scss'
 import { classNames } from '../../lib/classNames'
 
 type AsType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
-type TextFz = 14 | 16 | 18 | 20 | 22 | 24 | 26 | 28 | 30 | 32 | 34 | 36 | 38
+type TextFz = 14 | 16 | 18 | 20 | 22 | 24 | 26 | 28 | 30 | 32 | 34 | 36 | 38 | 40 | 42 | 44
 type TextFw = 400 | 500 | 600 | 700 | 800 
 
 interface TextProps {
@@ -27,7 +27,10 @@ const fzClasses: Record<TextFz, string> = {
   32: cls.fz32,
   34: cls.fz24,
   36: cls.fz36,
-  38: cls.fz38
+  38: cls.fz38,
+  40: cls.fz40,
+  42: cls.fz42,
+  44: cls.fz44,
 }
 
 const fwClasses: Record<TextFw, string> = {

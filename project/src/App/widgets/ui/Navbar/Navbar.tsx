@@ -48,7 +48,7 @@ export const Navbar = () => {
             <AppLink className={cls.nav_item} to=""> 
               <Text as='h5' fz={18} fw={400}>Поиск</Text>
               </AppLink>
-            <AppLink className={cls.nav_item3} to="">
+            <AppLink className={cls.nav_item3} to="/account">
               <img className={cls.nav_item3} src="https://icon666.com/f/_thumb/und/undp18hkx63t_64.png" alt="" />
             </AppLink>
             <AppLink className={cls.nav_item4} to="">
