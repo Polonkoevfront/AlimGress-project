@@ -1,7 +1,18 @@
 .btn {
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: .33rem;
+    cursor: pointer;
 
     &.default {
-        background: #f47b50;
+        color: #ffffff;
+        background-color: #f47b50;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: #a35235;
+        }
     }
 
     &.primary {
@@ -9,8 +20,8 @@
     }
 
     &.size42 {
-        width: 42px;
-        height: 22px;
+        width: 74px;
+        height: 41px;
     }
 
     &.size70 {
@@ -24,8 +35,8 @@
     }
 
     &.size91 {
-        width: 91px;
-        height: 22px;
+        width: 123px;
+        height: 41px;
     }
 
     &.size113 {
