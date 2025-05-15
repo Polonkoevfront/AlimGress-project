@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { HomePage } from "../../../pages/HomePage/HomePage"
+import { AccountPage } from "../../../pages"
 
 export const Routing = () => {
   return (
@@ -7,6 +8,7 @@ export const Routing = () => {
     <Routes>
 
       <Route path="/" element={<HomePage/>}/>
+      <Route path="/account" element={<AccountPage/>}/>
 
     </Routes>      
     </>
