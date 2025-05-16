@@ -33,10 +33,10 @@ export const Navbar = () => {
             <AppLink className={cls.nav_item2} to=""> 
               <Text as='h5' fz={18}>Коллекции</Text>
               </AppLink>
-            <AppLink className={cls.nav_item2} to=""> 
+            <AppLink className={cls.nav_item2} to="/bulkorders"> 
               <Text as='h5' fz={18}>Оптовые заказы</Text>
               </AppLink>
-            <AppLink className={cls.nav_item} to=""> 
+            <AppLink className={cls.nav_item} to="/cooperation"> 
               <Text as='h5' fz={18} fw={400}>Сотрудничество</Text>
               </AppLink>
             <AppLink className={cls.nav_item} to=""> 
@@ -45,7 +45,7 @@ export const Navbar = () => {
             <AppLink className={cls.nav_item} to=""> 
               <Text as='h5' fz={18} fw={400}>Контакты</Text>
               </AppLink>
-            <AppLink className={cls.nav_item} to=""> 
+            <AppLink className={cls.nav_item} to="/search"> 
               <Text as='h5' fz={18} fw={400}>Поиск</Text>
               </AppLink>
             <AppLink className={cls.nav_item3} to="/account">
