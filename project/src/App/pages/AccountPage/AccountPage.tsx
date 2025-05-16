@@ -32,7 +32,7 @@ export const AccountPage = () => {
                             <p className={cls.remember_me}>Запомнить меня</p>
                           </div>
 
-                          <AppLink className={cls.recovery_passoword} to="">
+                          <AppLink className={cls.recovery_passoword} to="/">
                             <p className={cls.recovery_passoword}>Забыли свой пароль?</p>
                           </AppLink>
                         </div>
@@ -60,7 +60,8 @@ export const AccountPage = () => {
                               упрощения вашего дальнейшего взаимодействия с
                             </span>
                             <span className={cls.item_txt2}> 
-                              сайтом, управления доступом к вашему аккаунту и других целей, описанных в документе <AppLink className={cls.item_txt3} to="">
+                              сайтом, управления доступом к вашему аккаунту и других целей, описанных в документе 
+                              <AppLink className={cls.item_txt3} to="">
                                 <span className={cls.item_txt3}>политика конфиденциальности.</span>
                               </AppLink>
                             </span>
@@ -73,7 +74,7 @@ export const AccountPage = () => {
             </div>
             </div>
 
-            <Footer/>
+              <Footer/>
       </div>
     </div>
   )
