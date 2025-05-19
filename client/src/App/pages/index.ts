@@ -1,0 +1,5 @@
+export { HomePage } from './HomePage/HomePage'
+export { AccountPage } from './AccountPage/AccountPage'
+export { CooperationPage } from './CooperationPage/CooperationPage'
+export { SearchPage } from './SearchPage/SearchPage'
+export { BulkOrdersPage } from './BulkOrdersPage/BulkOrdersPage'

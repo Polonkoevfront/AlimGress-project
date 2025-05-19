@@ -1,0 +1,122 @@
+.dealersauth {
+
+.dealersauth_logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+.dealersauth_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .dealersauth_desc {
+    margin-top: 38px;
+
+    .dealersauth_desc_item {
+        font-size: 18px;
+        margin-left: 1px;
+    }
+
+    .dealersauth_desc_item2 {
+        display: block;
+        font-size: 18px;
+        margin-top: 2px;
+    }
+
+}   
+}
+
+.block_desc_advantage {
+    margin-top: 20px;
+
+    .our_advantage {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .advantage_list {
+        margin-left: -20px;
+
+        .advantage_item {
+            font-size: 18px;
+            margin-top: 2px;
+
+            &::marker {
+                color: #f47b50;
+            }
+        }
+    }
+}
+}
+
+.bulkorders_form {
+    width: 620px;
+    height: 760px;
+    padding: 20px;
+    background: #f4e5d7;
+    border: 2px solid #f47b50;
+    border-radius: 20px;
+    box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
+    margin-top: 10px;
+
+    .label_input {
+        width: 512px;
+        height: 32px;
+        background: #ffffff;
+        border-radius: 4px;
+        border: 2px solid #f47b50;
+        margin-top: 4px;
+
+        .input {
+            width: 496px;
+            height: 27px;
+            margin-left: 5px;
+            border: none;
+            outline: none;
+            margin-top: 1.5px;
+        }
+    }
+    .input_name {
+        font-size: 17px;
+    }
+
+    .input_block {
+        margin-top: 13px;
+    }
+
+    .input_block2 {
+        margin-top: 20px;
+    }
+}
+
+.data_block {
+    margin-top: 24px;
+
+    .data_block_txt {
+        font-size: 17px;
+    }
+}
+
+ .link {
+    color: #000;
+    font-size: 17px;
+    margin-top: 20px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.required_field {
+    font-size: 15px;
+}
+
+.btn {
+    box-shadow: 0px 3.5px 0px #b5441b;
+    margin-top: 7px;
+} 
+
