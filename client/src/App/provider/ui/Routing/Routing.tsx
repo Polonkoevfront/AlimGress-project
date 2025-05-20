@@ -4,6 +4,7 @@ import { AccountPage, BulkOrdersPage, SearchPage } from "../../../pages"
 import { CooperationPage } from "../../../pages/CooperationPage/CooperationPage"
 import { ContactUsPage } from "../../../pages/ContactUsPage/ContactUsPage"
 import { DealersAuthPage } from "../../../pages/CooperationPage/DealersAuthPage/DealersAuthPage"
+import { DesignersOthersPage } from "../../../pages/CooperationPage/DesignersOthersPage/Designers&othersPage"
 
 export const Routing = () => {
   return (
@@ -14,10 +15,10 @@ export const Routing = () => {
       <Route path="/account" element={<AccountPage/>}/>
       <Route path="/cooperation" element={<CooperationPage/>}/>
       <Route path="/dealers:auth" element={<DealersAuthPage/>}/>
-      {/* <Route path="/cooperation" element={<CooperationPage/>}/> */}
+      <Route path="/designers:others" element={<DesignersOthersPage/>}/>
       <Route path="/search" element={<SearchPage/>}/>
       <Route path="/bulkorders" element={<BulkOrdersPage/>}/>
-      <Route path="/contac:tus" element={<ContactUsPage/>}/>
+      <Route path="/contact:us" element={<ContactUsPage/>}/>
 
     </Routes>      
     </>

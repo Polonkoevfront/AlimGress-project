@@ -27,7 +27,7 @@ export const CooperationPage = () => {
                 <div>
                     <img className={cls.img2} src="https://maimoonceramica.ru/wp-content/uploads/2025/01/dizajneram-arhitektoram-stroitelyam.webp" alt="" />
                     <div className={cls.link_block}>
-                      <AppLink className={cls.cooperation_link2} to="">
+                      <AppLink className={cls.cooperation_link2} to="/designers:others">
                     <span className={cls.cooperation_link2}>Дизайнерам, архитекторам 
                     <span className={cls.cooperation_link3}>и строителям</span>
                     </span>

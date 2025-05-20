@@ -1,67 +1,72 @@
-.dealersauth {
+.designersothers {
 
-.dealersauth_logo {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 112px;
-}
+   
 
-.dealersauth_body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .designersothers_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    .dealersauth_desc {
-    margin-top: 38px;
-
-    .dealersauth_desc_item {
-        font-size: 18px;
-        margin-left: 1px;
+        .designersothers_logo_txt {
+        margin-top: 112px;
+    }
+    
+    .designersothers_logo_txt2 {
+        margin-top: -20px;
     }
 
-    .dealersauth_desc_item2 {
-        display: block;
-        font-size: 18px;
-        margin-top: 3px;
-    }
-
-}   
-}
-
-.block_desc_advantage {
-    margin-top: 20px;
-
-    .our_advantage {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .advantage_list {
-        margin-left: -20px;
-
-        .advantage_item {
+    .designersothers_desc {
+ 
+        .desc_item {
+            display: block;
             font-size: 18px;
             margin-top: 3px;
-
-            &::marker {
-                color: #f47b50;
-            }
         }
     }
-}
-}
 
-.bulkorders_form {
+    .block_advantage {
+        margin-left: 9px;
+        margin-top: 20px;
+
+        .advantage_desc {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .advantage_list_block {
+            position: relative;
+            margin-left: -19px;
+            margin-top: 20px;   
+
+            .list_item {
+                font-size: 18px;
+                margin-top: 5px;
+
+                &::marker {
+                    color: #f47b50;
+                }
+            }
+        }
+
+        .work_txt {
+            position: absolute;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+    }
+
+    }
+
+   .designersothers_form {
     width: 620px;
-    height: 760px;
+    height: 610px;
     padding: 20px;
     background: #f4e5d7;
     border: 2px solid #f47b50;
     border-radius: 20px;
     box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
-    margin-top: 10px;
+    margin-top: 60px;
 
     .label_input {
         width: 512px;
@@ -102,6 +107,7 @@
 }
 
  .link {
+    width: 287px;
     color: #000;
     font-size: 17px;
     margin-top: 20px;
@@ -120,3 +126,5 @@
     margin-top: 7px;
 } 
 
+
+}
