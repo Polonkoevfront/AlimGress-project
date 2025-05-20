@@ -32,7 +32,7 @@ export const AccountPage = () => {
                             <p className={cls.remember_me}>Запомнить меня</p>
                           </div>
 
-                          <AppLink className={cls.recovery_passoword} to="/">
+                          <AppLink className={cls.recovery_passoword} to="/my:account">
                             <p className={cls.recovery_passoword}>Забыли свой пароль?</p>
                           </AppLink>
                         </div>
