@@ -4,11 +4,7 @@ import { Text } from '../../shared'
 import { Footer, Navbar } from '../../widgets'
 import cls from './SearchPage.module.scss'
 
-export const SearchPage = (type: any) => {
-  const [isValue, setIsValue] = useState("")
-
-  const input = <input value={isValue} onChange={e => setIsValue(e.target.value)} type={type} />;
-
+export const SearchPage = () => {
 
   return (
     <>
@@ -24,7 +20,7 @@ export const SearchPage = (type: any) => {
                 </div>
                 <div className={cls.search_input_block}>
                     <div className={cls.input_label}>
-                        <input value={isValue} className={cls.input} type="search" placeholder='Искать товары...'/>
+                        <input className={cls.input} type="search" placeholder='Искать товары...'/>
                     </div>
                         <label className={cls.search_btn}>
                             <img className={cls.search_icon} src="https://img.icons8.com/?size=32&id=14079&format=png" alt="" />

@@ -24,13 +24,13 @@ export const Navbar = () => {
           <img className={cls.alimgress_logo} src="" alt="" />
 
           <div className={cls.navigation_block}>
-            <AppLink className={cls.nav_item} to=""> 
+            <AppLink className={cls.nav_item} to="/about:us"> 
               <Text as='h5' fz={18} fw={400}>О нас</Text>
               </AppLink>
             <AppLink className={cls.nav_item2} to=""> 
               <Text as='h5' fz={18}>Керамогранит</Text>
               </AppLink>
-            <AppLink className={cls.nav_item2} to=""> 
+            <AppLink className={cls.nav_item2} to="/collection"> 
               <Text as='h5' fz={18}>Коллекции</Text>
               </AppLink>
             <AppLink className={cls.nav_item2} to="/bulkorders"> 
@@ -39,7 +39,7 @@ export const Navbar = () => {
             <AppLink className={cls.nav_item} to="/cooperation"> 
               <Text as='h5' fz={18} fw={400}>Сотрудничество</Text>
               </AppLink>
-            <AppLink className={cls.nav_item} to=""> 
+            <AppLink className={cls.nav_item} to="/blog"> 
               <Text as='h5' fz={18} fw={400}>Блог</Text>
               </AppLink>
             <AppLink className={cls.nav_item} to="/contact:us"> 

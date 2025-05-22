@@ -1,5 +1,6 @@
 export { HomePage } from './HomePage/HomePage'
 export { AccountPage } from './AccountPage/AccountPage'
+export { AboutUsPage } from './AboutUsPage/AboutUsPage'
 export { MyAccountPage } from './AccountPage//MyAccountPage/MyAccountPage'
 export { CooperationPage } from './CooperationPage/CooperationPage'
 export { ContactUsPage } from './ContactUsPage/ContactUsPage'
@@ -7,3 +8,4 @@ export { DealersAuthPage } from './CooperationPage/DealersAuthPage/DealersAuthPa
 export { DesignersOthersPage } from './CooperationPage/DesignersOthersPage/DesignersOthersPage'
 export { SearchPage } from './SearchPage/SearchPage'
 export { BulkOrdersPage } from './BulkOrdersPage/BulkOrdersPage'
+export { BlogPage } from './BlogPage/BlogPage'
