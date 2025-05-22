@@ -1,0 +1,90 @@
+.blog {
+
+    .blog_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .blog_logo {
+            margin-top: 112px;
+        }
+
+        .blog_category {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 15px;
+
+            .blog_ceramica {
+                width: 165px;
+                height: 34px;
+                border-radius: 8px;
+                background: #f4e5d7;
+
+                .blog_ceramica_txt {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 3px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .blog_news {
+                width: 115px;
+                height: 34px;
+                border-radius: 8px;
+                background: #f4e5d7;
+
+                .blog_news_txt {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 3px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .blog_useful {
+                width: 123px;
+                height: 34px;
+                border-radius: 8px;
+                background: #f4e5d7;
+
+                .blog_useful_txt {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 3px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .num {
+                color: #663300;
+                font-weight: 400;
+                margin-left: 3px;
+            }
+        }
+    }
+}
