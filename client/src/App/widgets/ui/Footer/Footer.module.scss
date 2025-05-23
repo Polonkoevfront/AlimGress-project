@@ -18,9 +18,140 @@
 }
 
 .footer {
-    height: 883px;
+    height: 990px;
     background: #c6aa8d;
+    background-image: url(../../../shared/assets/png/alimgress_bg_png.png);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
     margin-top: 100px;
+
+    position: relative;
+
+    .footer_first_block {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 75px;
+
+        .alimgress_logo {
+            width: 180px;
+        }
+
+        .alimgress_logo_txt {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 32px;
+            margin-top: -16px;
+        }
+
+        .alimgress_desc_block {
+            padding-left: 31px;
+            padding-top: 4px;
+
+            .alimgress_desc {
+                display: block;
+                color: #636363;
+                font-size: 18px;
+                font-weight: normal;
+                margin-top: 3px;
+            }
+        }
+
+        .alimgress_desc_block2 {
+            margin-left: 32px;
+            margin-top: 20px;
+
+            .alimgress_desc2 {
+                display: block;
+                color: #ffffff;
+                font-size: 16px;
+                margin-top: 3px;
+            }
+        }
+
+        .date {
+            color: #ffffff;
+            font-weight: 500;
+            margin-left: 10%;
+            margin-top: 63%;
+        }
+    }
+
+    .footer_second_block {
+        display: flex;
+        margin-left: 740px;
+        padding-top: 88px;
+
+        .about_us_block {
+            list-style: none;
+
+            .about_item {
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            .about_item2 {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .politics {
+            list-style: none;
+            margin-left: 20px;
+
+             .about_item {
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            .about_item2 {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .networks_block {
+            list-style: none;
+            margin-left: 24px;
+
+            .about_item {
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            .about_item2 {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
 .text {
@@ -29,4 +160,23 @@
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+}
+
+.footer_latest_block {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 780px;
+    margin-top: 545px;
+    
+    .desc_item {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .desc_item2 {
+        color: #ffffff;
+        font-size: 15px;
+        margin-top: 2px;
+    }
 }
