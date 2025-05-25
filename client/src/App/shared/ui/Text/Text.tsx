@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 import cls from './Text.module.scss'
 import { classNames } from '../../lib/classNames'
 
-type AsType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+type AsType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p"
 type TextFz = 14 | 16 | 18 | 20 | 22 | 24 | 26 | 28 | 30 | 32 | 34 | 36 | 38 | 40 | 42 | 44
 type TextFw = 400 | 500 | 600 | 700 | 800 
 
@@ -57,6 +57,7 @@ export const Text: FC<TextProps> = (props) => {
       h4: <h4 className={(classNames("", {}, classes))}>{children}</h4>,
       h5: <h5 className={(classNames("", {}, classes))}>{children}</h5>,
       h6: <h6 className={(classNames("", {}, classes))}>{children}</h6>,
+      p: <p className={(classNames("", {}, classes))}>{children}</p>,
     }
 
   return getAS[as]

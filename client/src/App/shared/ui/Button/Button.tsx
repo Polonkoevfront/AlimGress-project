@@ -3,7 +3,7 @@ import cls from './Button.module.scss'
 import { classNames, Mods } from '../../lib/classNames';
 
 type ButtonVariant = "default" | "primary";  
-type ButtonSize = 42 | 70 | 83 | 91 | 113 | 115 | 131 | 135 | 169 | 175 | 212;
+type ButtonSize = 42 | 70 | 83 | 91 | 113 | 115 | 131 | 135 | 169 | 175 | 201 | 212;
 
 interface ButtonProps {
     children: ReactNode;
@@ -29,6 +29,7 @@ const sizeClasses: Record<ButtonSize, string> = {
     135: cls.size135,
     169: cls.size169,
     175: cls.size175,
+    201: cls.size201,
     212: cls.size212,
 }
 
