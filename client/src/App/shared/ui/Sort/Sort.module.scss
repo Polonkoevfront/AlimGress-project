@@ -1,0 +1,41 @@
+.popup {
+    width: 168px;
+    height: 17px;
+    border: 1px solid #353535;
+    cursor: pointer;
+
+    position: relative;
+
+    .popup_txt {
+        font-size: 13px;
+        position: absolute;
+        left: 2px;
+        top: -2px;
+    }
+}
+
+.list_block {
+    position: absolute;
+    left: 0;
+    width: 128.5px;
+    list-style: none;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-left: 121px;
+    margin-top: 0px;
+
+    li {
+        position: relative;
+        font-size: 13px;
+        margin-left: -41px;
+        padding-left: 2.7px;
+        padding-top: -10px;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffffff;
+            background: #f47b50;
+        }
+    }
+}
+       
