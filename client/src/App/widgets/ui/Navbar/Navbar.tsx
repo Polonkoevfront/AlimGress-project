@@ -1,9 +1,11 @@
+import React from 'react'
 import { AppLink } from '../../../provider/ui/AppLink/AppLink'
 import { Text } from '../../../shared'
 import cls from './Navbar.module.scss'
 // import {} from '../../../shared/assets/svg/'
 
 export const Navbar = () => {
+
   return (
     <div className={cls.navbar}>
       <div className={cls.navbar_body}>
@@ -26,28 +28,28 @@ export const Navbar = () => {
           <div className={cls.navigation_block}>
             <AppLink className={cls.nav_item} to="/about:us"> 
               <Text as='h5' fz={18} fw={400}>О нас</Text>
-              </AppLink>
-            <AppLink className={cls.nav_item2} to=""> 
-              <Text as='h5' fz={18}>Керамогранит</Text>
-              </AppLink>
-            <AppLink className={cls.nav_item2} to="/collection"> 
-              <Text as='h5' fz={18}>Коллекции</Text>
-              </AppLink>
-            <AppLink className={cls.nav_item2} to="/bulkorders"> 
-              <Text as='h5' fz={18}>Оптовые заказы</Text>
-              </AppLink>
+            </AppLink>
+            <AppLink className={cls.nav_item} to="/keramogranit"> 
+              <Text as='h5' fz={18} fw={500}>Керамогранит</Text>
+            </AppLink>
+            <AppLink className={cls.nav_item} to="/collection"> 
+              <Text as='h5' fz={18} fw={500}>Коллекции</Text>
+            </AppLink>
+            <AppLink className={cls.nav_item} to="/bulkorders"> 
+              <Text as='h5' fz={18} fw={500}>Оптовые заказы</Text>
+            </AppLink>
             <AppLink className={cls.nav_item} to="/cooperation"> 
               <Text as='h5' fz={18} fw={400}>Сотрудничество</Text>
-              </AppLink>
+            </AppLink>
             <AppLink className={cls.nav_item} to="/blog"> 
               <Text as='h5' fz={18} fw={400}>Блог</Text>
-              </AppLink>
+            </AppLink>
             <AppLink className={cls.nav_item} to="/contact:us"> 
               <Text as='h5' fz={18} fw={400}>Контакты</Text>
-              </AppLink>
+            </AppLink>
             <AppLink className={cls.nav_item} to="/search"> 
               <Text as='h5' fz={18} fw={400}>Поиск</Text>
-              </AppLink>
+            </AppLink>
             <AppLink className={cls.nav_item3} to="/account">
               <img className={cls.nav_item3} src="https://icon666.com/f/_thumb/und/undp18hkx63t_64.png" alt="" />
             </AppLink>

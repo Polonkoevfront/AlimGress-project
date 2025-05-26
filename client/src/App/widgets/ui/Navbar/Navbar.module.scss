@@ -87,15 +87,6 @@
                     }
                 }
 
-                .nav_item2 {
-                    color: #000;
-                    text-decoration: none;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
                 .nav_item3 {
                     width: 18px;
                     height: 18px;
@@ -110,4 +101,8 @@
             }
         }
     }
+}
+
+.active {
+    text-decoration: underline;
 }

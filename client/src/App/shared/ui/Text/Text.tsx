@@ -12,6 +12,7 @@ interface TextProps {
     as?: AsType;
     fz?: TextFz;
     fw?: TextFw;
+    onClick?: () => void;
 }
 
 const fzClasses: Record<TextFz, string> = {
@@ -42,7 +43,7 @@ const fwClasses: Record<TextFw, string> = {
 }
 
 export const Text: FC<TextProps> = (props) => {
-    const { children, className = '', as = 'h2', fz = '16', fw = 600 } = props;
+    const { children, className = '', as = 'h2', fz = '16', fw = 600, onClick } = props;
 
     const classes = [
       fz && fzClasses[fz],

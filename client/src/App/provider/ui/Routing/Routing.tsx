@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { AboutUsPage, AccountPage, BlogPage, BulkOrdersPage, ContactUsPage, CooperationPage, DealersAuthPage, DesignersOthersPage, HomePage, MyAccountPage, SearchPage } from "../../../pages"
 import { CollectionPage } from "../../../pages/CollectionPage/ui/CollectionPage"
+import { KeramogranitPage } from "../../../pages/KeramogranitPage/KeramogranitPage"
 
 export const Routing = () => {
   return (
@@ -9,6 +10,7 @@ export const Routing = () => {
 
       <Route path="/" element={<HomePage/>}/>
       <Route path="/account" element={<AccountPage/>}/>
+      <Route path="/keramogranit" element={<KeramogranitPage/>}/>
       <Route path="/my:account" element={<MyAccountPage/>}/>
       <Route path="/cooperation" element={<CooperationPage/>}/>
       <Route path="/collection" element={<CollectionPage/>}/>
