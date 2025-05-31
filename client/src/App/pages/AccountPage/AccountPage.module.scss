@@ -139,6 +139,7 @@
 
         .remember_me {
             font-size: 17px;
+            margin-left: -6px;
         }
     }
 }
@@ -189,3 +190,17 @@
     }
 }
 
+.block_figure {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    margin-left: -6px;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff0000;
+}

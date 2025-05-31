@@ -16,7 +16,7 @@ export const DesignersOthersPage = () => {
 
           <div className={cls.designersothers_desc}>
             <span className={cls.desc_item}>Дизайнерам, архитекторам и строителям — если вы хотите стать</span>
-            <span className={cls.desc_item}>официальным партнёром Maimoon Ceramica, пожалуйста, заполните</span>
+            <span className={cls.desc_item}>официальным партнёром AlimGress, пожалуйста, заполните</span>
             <span className={cls.desc_item}>форму ниже.</span>
           </div>
 
