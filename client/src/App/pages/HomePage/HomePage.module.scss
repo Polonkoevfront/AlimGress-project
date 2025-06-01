@@ -5,7 +5,7 @@
     background-attachment: fixed; 
     background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-slabs-maimoon-ceramica-11.webp);
     background-size: cover; 
-
+    box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
      
         .purchase_block {
             margin-left: 825px;
@@ -105,4 +105,187 @@
                 }
             }
         }
+}
+
+.collections_card_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    .collections_card_wrap {
+        display: flex;
+        margin-left: -22px;
+
+        .collections_card_item {
+            margin-left: 24px;
+            margin-top: 10px;
+        }
+        
+        .collections_image {
+            width: 320px;
+            height: 319px;
+            border-radius: 1.5rem;
+            object-fit: cover;      
+            object-position: center;
+            
+            cursor: pointer;
+        }
+
+        .collections_card_title {
+            display: flex;
+            color: #000;
+            font-size: 16.5px;
+            margin-top: 14px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.form_block {
+    width: 1519px;
+    height: 600px;
+    background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-gloster-maimoon-ceramica-1.webp);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
+    margin-top: 600px;
+
+    .form_body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 100px;
+
+        .logo_txt {
+            color: #ffffff;
+            padding-top: 20px;
+        }
+
+        .form_desc_block {
+            margin-top: -55px;
+
+            .desc_item {
+                display: block;
+                color: #ffffff;
+                font-size: 18px;
+                margin-top: 3px;
+            }
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+    }
+}
+
+.consultation_bg {
+
+    .consultation_form_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+
+        .consultation_form_logo_txt {
+
+        }
+
+        .consultation_form {
+            width: 940px;
+            height: 455px;
+            background: #f4e5d7;
+            border-radius: 20px;            
+            border: 2px solid #f47b50;
+            padding: 20px;
+            box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
+
+            .input_block {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 17px;
+                }
+
+                .input_item {
+                    width: 752px;
+                    height: 16px;
+                    border-radius: 4px;
+                    border: 2px solid #f47b50;
+                    padding: 8px;
+                    margin-top: 4px;
+                }
+            }
+
+            .input_block2 {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                .input_item {
+                    width: 752px;
+                    height: 16px;
+                    border-radius: 4px;
+                    border: 2px solid #f47b50;
+                    padding: 8px;
+                    margin-top: 4px;
+                }
+            }
+
+    .data_block {
+        display: flex;
+        margin-top: 24px;
+
+        .cube {
+            width: 11px;
+            height: 11px;
+            background: #ffffff;
+            border: 1px solid #969696;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+            margin-top: 5px;
+
+        &:hover {
+            border: 1px solid #5c5c5c;
+        }
+    }
+
+    .data_block_txt {
+        font-size: 17px;
+        margin-left: 10px;
+    }
+}
+
+ .link {
+    display: flex;
+    flex-direction: column;
+    width: 287px;
+    color: #000;
+    font-size: 17px;
+    margin-left: 0px;
+    margin-top: 10px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.required_field {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+    .btn {
+        box-shadow: 0px 3.5px 0px #b5441b;
+        margin-top: 7px;
+    } 
+}
+}
 }

@@ -14,10 +14,9 @@ export const Sort = () => {
     
   return (
     <>
-    <div className={cls.popup}>
-      <span className={cls.popup_txt} onClick={() => setOpenSort(!openSort)}>
+    <div onClick={() => setOpenSort(!openSort)} className={cls.popup}>
+      <span className={cls.popup_txt}>
         {sortTitle}
-        <img src="" alt="" />
       </span>
     </div>
     {

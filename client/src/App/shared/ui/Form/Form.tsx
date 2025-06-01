@@ -8,10 +8,10 @@ interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
 }
 
 export const Form: FC<FormProps> = (props) => {
-  const { children, className = '' } = props;
+  const { children, className = '' , onSubmit} = props;
 
   return (
-    <form className={classNames(cls.form, {}, [className])}>
+    <form onSubmit={onSubmit} className={classNames(cls.form, {}, [className])}>
       {children}
     </form>
   )

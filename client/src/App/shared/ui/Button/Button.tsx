@@ -3,7 +3,7 @@ import cls from './Button.module.scss'
 import { classNames, Mods } from '../../lib/classNames';
 
 type ButtonVariant = "default" | "primary";  
-type ButtonSize = 42 | 70 | 83 | 91 | 102 | 113 | 115 | 131 | 135 | 169 | 175 | 201 | 212;
+type ButtonSize = 42 | 70 | 83 | 91 | 102 | 113 | 115 | 131 | 135 | 147 | 169 | 175 | 201 | 212;
 
 interface ButtonProps {
     children: ReactNode;
@@ -11,6 +11,8 @@ interface ButtonProps {
     size?: ButtonSize;
     className?: string;
     max?: boolean;
+    type?: string
+    onClick?: () => void;
 }  
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -28,6 +30,7 @@ const sizeClasses: Record<ButtonSize, string> = {
     115: cls.size115,
     131: cls.size131,
     135: cls.size135,
+    147: cls.size147,
     169: cls.size169,
     175: cls.size175,
     201: cls.size201,
@@ -35,7 +38,7 @@ const sizeClasses: Record<ButtonSize, string> = {
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-    const { children, className = '', variant = "default", size = "70", max} = props;
+    const { children, className = '', variant = "default", size = "70", max,} = props;
 
     const classes = [
         variant && variantClasses[variant],
