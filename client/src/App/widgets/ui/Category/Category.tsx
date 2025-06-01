@@ -12,7 +12,7 @@ const categoryColor = [
     { title: "Цвет", color: "Бежевый", color2: "Белый", color3: "Голубой", color4: "Жёлтый", color5: "Зеленый", color6: "Золотистый", color7: "Коричневый", color8: "Серебристый", color9: "Серый", color10: "Синий", color11: "Чёрный" },
 ]
 const categoryScopeApplication = [
-    { title: "Область применения", scopeApplication: "Для ванной", scopeApplication2: "Для гостиной", scopeApplication3: "Для коридора", scopeApplication4: "Для кухни", scopeApplication5: "Для общественных", scopeApplication5_5: "помещений", scopeApplication6: "Для улицы" }
+    { title: "Область", title2: "применения", scopeApplication: "Для ванной", scopeApplication2: "Для гостиной", scopeApplication3: "Для коридора", scopeApplication4: "Для кухни", scopeApplication5: "Для общественных", scopeApplication5_5: "помещений", scopeApplication6: "Для улицы" }
 ]
 
 export const Category = () => {
@@ -133,6 +133,7 @@ export const Category = () => {
         categoryScopeApplication.map((item4, index4) => (
               <ul className={cls.category_block_item2} key={index4}>
                 <Text as='h3' fz={28} fw={400}>{item4.title}</Text>
+                <Text className={cls.title_2} as='h3' fz={28} fw={400}>{item4.title2}</Text>
                 <div>
                     <div className={cls.block_figure2}></div>
                     <li>{item4.scopeApplication}</li>
@@ -154,8 +155,7 @@ export const Category = () => {
                     <li>{item4.scopeApplication5}</li>
                 </div>
                 <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication5_5}</li>
+                    <li style={{marginTop: "2px"}}>{item4.scopeApplication5_5}</li>
                 </div>
                 <div>
                     <div className={cls.block_figure2}></div>

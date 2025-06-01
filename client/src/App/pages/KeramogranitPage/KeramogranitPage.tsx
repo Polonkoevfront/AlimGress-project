@@ -15,17 +15,28 @@ export const KeramogranitPage = () => {
             <Text as='h1' fz={44} fw={400}>Керамогранит</Text>
 
             <Category/>
-            <Sort/>
+            <div className={cls.sort}>
+              <Sort/>
 
-            {
-              ceramica.map((obj) => (
-                <CeramicaCards title={obj.title} price={obj.price} image={obj.imageUrl}/>
+              <div style={{marginTop: "10px"}}>
+              {
+                ceramica.map((obj) => (
+                  <CeramicaCards
+                  title={obj.title} 
+                  price={obj.price} 
+                  image={obj.imageUrl}
+                  size={obj.size}
+                />
               )) 
-            }
-
+              }
+              </div>
+            </div>
         </div>
 
+        <div style={{marginTop: "100px"}}>
         <Footer/>
+        </div>
+
       </div>
     </div>
   )

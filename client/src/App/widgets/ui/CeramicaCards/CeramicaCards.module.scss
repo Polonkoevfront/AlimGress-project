@@ -1,0 +1,45 @@
+.block {
+    position: relative;
+}
+
+.cards_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-left: -852px;
+
+    .ceramica_card_item {
+        width: 233px;
+        height: 410px;
+        margin-top: 40px;
+
+        .image {
+            width: 233px;
+            height: 233px;
+            border-radius: 8px;
+            border: 2px solid #d4bfaa;
+        }
+
+        .desc_txt {
+            margin-top: 5px;
+        }
+
+        .desc_item {
+            display: block;
+            text-align: center;
+            color: #000;
+        }
+
+        .price {
+            color: #b5441b;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn {
+            margin-left: 65.5px;
+            margin-top: 5px;
+        }
+    }
+}
