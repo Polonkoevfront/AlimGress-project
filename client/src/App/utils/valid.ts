@@ -2,11 +2,12 @@ import { AuthStateUserData } from "./typescript";
 
 
 export const validAuthData = (userData: AuthStateUserData) => {
-    const {username, password} = userData;
+    const {username, password, email} = userData;
 
     const errors: Record<string, string> = {
         username: "",
-        password: ""
+        password: "",
+        email: "",
     }
 
     if(username.length === 0) {
@@ -35,6 +36,18 @@ export const validAuthData = (userData: AuthStateUserData) => {
             ...errors, 
             username: "минимум 6 символов"
         }
+    }
+
+    if(email.length === 0) {
+        return {
+            ...errors, 
+            email: "Ошибка: Необходимо ввести электронный адрес пользователя."
+        }
+    } else {
+        const EMAIL_REGEXP = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
+        if (!EMAIL_REGEXP.test(email.toLowerCase())) {
+            errors.email = "Ошибка: Некорректный формат email.";
+    }
     }
 
     return errors; 

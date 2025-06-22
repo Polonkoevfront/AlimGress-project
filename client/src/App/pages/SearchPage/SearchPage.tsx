@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { AppLink } from '../../provider/ui/AppLink/AppLink'
 import { Text } from '../../shared'
 import { Footer, Navbar } from '../../widgets'
@@ -27,7 +26,7 @@ export const SearchPage = () => {
                         </label>
                 </div>
                 <p className={cls.search_latest_txt}>Не получается найти товар или коллекцию — 
-                    <AppLink className={cls.search_link} to="/contactus">
+                    <AppLink className={cls.search_link} to="/contact:us">
                     <p className={cls.search_link}>
                         свяжитесь с нами.
                     </p>

@@ -1,170 +1,127 @@
+
 import React from 'react'
 import { Text } from '../../../shared'
 import cls from './Category.module.scss'
 
 const categoryLength = [
-    { title: "Длина", size: "180", size2: "160", size3: "120", size4: "100", size5: "80", size6: "60" },
+  { title: "Длина", sizes: ["180", "160", "120", "100", "80", "60"] }
 ]
 const categoryWidth = [
-    { title: "Ширина", sizeWidth: "120", sizeWidth2: "100", sizeWidth3: "80", sizeWidth4: "60" },
+  { title: "Ширина", sizes: ["120", "100", "80", "60"] }
 ]
 const categoryColor = [
-    { title: "Цвет", color: "Бежевый", color2: "Белый", color3: "Голубой", color4: "Жёлтый", color5: "Зеленый", color6: "Золотистый", color7: "Коричневый", color8: "Серебристый", color9: "Серый", color10: "Синий", color11: "Чёрный" },
+  { title: "Цвет", colors: ["Бежевый", "Белый", "Голубой", "Жёлтый", "Зеленый", "Золотистый", "Коричневый", "Серебристый", "Серый", "Синий", "Чёрный"] }
 ]
 const categoryScopeApplication = [
-    { title: "Область", title2: "применения", scopeApplication: "Для ванной", scopeApplication2: "Для гостиной", scopeApplication3: "Для коридора", scopeApplication4: "Для кухни", scopeApplication5: "Для общественных", scopeApplication5_5: "помещений", scopeApplication6: "Для улицы" }
+  { title: "Область", title2: "применения", scopes: ["Для ванной", "Для гостиной", "Для коридора", "Для кухни", "Для общественных", "помещений", "Для улицы"] }
 ]
 
 export const Category = () => {
-    const [active, setActive] = React.useState(false)
+  const [activeLength, setActiveLength] = React.useState<number[]>([])
+  const [activeWidth, setActiveWidth] = React.useState<number[]>([])
+  const [activeColor, setActiveColor] = React.useState<number[]>([])
+  const [activeScope, setActiveScope] = React.useState<number[]>([])
+
+  const toggleActive = (arr: number[], setArr: React.Dispatch<React.SetStateAction<number[]>>, idx: number) => {
+    setArr(prev =>
+      prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx]
+    )
+  }
 
   return (
     <div className={cls.categories_block}>
-      {
-        categoryLength.map((item, index) => (
-            <ul className={cls.category_block_item} key={index}>
-                <Text as='h3' fz={28} fw={400}>{item.title}</Text>
-                <div style={{display: "flex", marginTop: "-20px"}}>
-                    <div onClick={() => setActive(!active)} className={cls.block_figure}></div>
-                    <li>{item.size} см</li>
-                </div>
-                <div style={{display: "flex"}}>
-                    <div onClick={() => setActive(!active)} className={cls.block_figure}></div>
-                    <li>{item.size2} см</li>
-                </div>
-               <div style={{display: "flex"}}>
-                    <div className={cls.block_figure}></div>
-                    <li>{item.size3} см</li>
-               </div>
-               <div style={{display: "flex"}}>
-                    <div className={cls.block_figure}></div>
-                    <li>{item.size4} см</li>
-               </div>
-               <div style={{display: "flex"}}>
-                    <div className={cls.block_figure}></div>
-                    <li>{item.size5} см</li>
-               </div>
-               <div style={{display: "flex"}}>
-                    <div className={cls.block_figure}></div>
-                    <li>{item.size6} см</li>
-               </div>
-
-               {
-                active && (
-                <svg style={{position: "absolute", left: "38px", top: "65px", width: "18px", cursor: "pointer"}} xmlns='http://www.w3.org/2000/svg'>
+      {categoryLength.map((item, index) => (
+        <ul className={cls.category_block_item} key={index}>
+          <Text className={cls.text_block} as='h3' fz={28} fw={400}>{item.title}</Text>
+          {item.sizes.map((size, idx) => (
+            <div style={{ display: "flex", alignItems: "center"}} key={idx}>
+              <div
+                onClick={() => toggleActive(activeLength, setActiveLength, idx)}
+                className={cls.block_figure}
+              >
+                {activeLength.includes(idx) && (
+                  <svg style={{ position: "absolute", left: -2, top: -4, width: "18px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
                     <path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
-                </svg>
-                )
-               }
-            </ul>
-        ))
-      }
-      {
-        categoryWidth.map((item2, index2) => (
-              <ul className={cls.category_block_item2} key={index2}>
-                <Text as='h3' fz={28} fw={400}>{item2.title}</Text>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item2.sizeWidth} см</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item2.sizeWidth2} см</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item2.sizeWidth3} см</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item2.sizeWidth4} см</li>
-                </div>
-            </ul>
-        ))
-      }
-      {
-        categoryColor.map((item3, index3) => (
-              <ul className={cls.category_block_item2} key={index3}>
-                <Text as='h3' fz={28} fw={400}>{item3.title}</Text>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color2}</li>
-                </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color3}</li>
-               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color4}</li>
-               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color5}</li>
-               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color6}</li>
-               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color7}</li>
-               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color8}</li>
-               </div>
-              <div>
-                  <div className={cls.block_figure2}></div>
-                <li>{item3.color9}</li>
+                  </svg>
+                )}
               </div>
-               <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item3.color11}</li>
-               </div>
-            </ul>
-        ))
-      }
-      {
-        categoryScopeApplication.map((item4, index4) => (
-              <ul className={cls.category_block_item2} key={index4}>
-                <Text as='h3' fz={28} fw={400}>{item4.title}</Text>
-                <Text className={cls.title_2} as='h3' fz={28} fw={400}>{item4.title2}</Text>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication2}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication3}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication4}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication5}</li>
-                </div>
-                <div>
-                    <li style={{marginTop: "2px"}}>{item4.scopeApplication5_5}</li>
-                </div>
-                <div>
-                    <div className={cls.block_figure2}></div>
-                    <li>{item4.scopeApplication6}</li>
-                </div>
-            </ul>
-        ))
-      }
+              <li>{size} см</li>
+            </div>
+          ))}
+        </ul>
+      ))}
+
+      {categoryWidth.map((item, index) => (
+        <ul className={cls.category_block_item2} key={index}>
+          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          {item.sizes.map((size, idx) => (
+            <div style={{ display: "flex", alignItems: "center",}} key={idx}>
+              <div
+                onClick={() => toggleActive(activeWidth, setActiveWidth, idx)}
+                className={cls.block_figure2}
+              >
+                {activeWidth.includes(idx) && (
+                  <svg style={{ position: "absolute", left: -2, top: -4, width: "18px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
+                  </svg>
+                )}
+              </div>
+              <li>{size} см</li>
+            </div>
+          ))}
+        </ul>
+      ))}
+
+      {categoryColor.map((item, index) => (
+        <ul className={cls.category_block_item2} key={index}>
+          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          {item.colors.map((color, idx) => (
+            <div style={{ display: "flex", alignItems: "center" }} key={idx}>
+              <div
+                onClick={() => toggleActive(activeColor, setActiveColor, idx)}
+                className={cls.block_figure2}
+              >
+                {activeColor.includes(idx) && (
+                  <svg style={{ position: "absolute", left: -2, top: -4, width: "18px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
+                  </svg>
+                )}
+              </div>
+              <li>{color}</li>
+            </div>
+          ))}
+        </ul>
+      ))}
+
+      {categoryScopeApplication.map((item, index) => (
+        <ul className={cls.category_block_item2} key={index}>
+          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          <Text className={cls.title_2} as='h3' fz={28} fw={400}>{item.title2}</Text>
+          {item.scopes.map((scope, idx) => (
+            <div style={{ display: "flex", alignItems: "center",}} key={idx}>
+              {scope === "помещений" ? (
+                <li style={{ marginTop: "2px" }}>{scope}</li>
+              ) : (
+                <>
+                  <div
+                    onClick={() => toggleActive(activeScope, setActiveScope, idx)}
+                    className={cls.block_figure2}
+                  >
+                    {activeScope.includes(idx) && (
+                      <svg style={{ position: "absolute", left: -2, top: -4, width: "18px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
+                      </svg>
+                    )}
+                  </div>
+                  <li>{scope}</li>
+                </>
+              )}
+            </div>
+          ))}
+        </ul>
+      ))}
     </div>
   )
 }
+
 

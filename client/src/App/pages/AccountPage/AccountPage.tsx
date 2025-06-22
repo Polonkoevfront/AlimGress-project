@@ -6,11 +6,17 @@ import { Footer, Navbar } from '../../widgets'
 import cls from './AccountPage.module.scss'
 import { AuthStateUserData } from '../../utils/typescript'
 import { validAuthData } from '../../utils/valid'
+import { getAuthError, registerByEmail } from '../../features'
+import { data } from 'react-router-dom'
+import { useAppDispatch } from '../../shared/hooks/useAppDispatch'
+import { useSelector } from 'react-redux'
 
 export const AccountPage = () => {
   const [blockActive, setBlockActive] = React.useState(false);
-  const [userData, setUserData] = useState<AuthStateUserData>({username: "", password: ""})
-  const [errors, setErrors] = useState<AuthStateUserData>({username: "", password: ""})
+  const [userData, setUserData] = useState<AuthStateUserData>({username: "", password: "", email: ""})
+  const [errors, setErrors] = useState<AuthStateUserData>({username: "", password: "", email: ""})
+  const dispatch = useAppDispatch();
+  const authError = useSelector(getAuthError);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setUserData({...userData, [e.target.name]: e.target.value})
@@ -19,6 +25,7 @@ export const AccountPage = () => {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const errors: any = validAuthData(userData)
+    dispatch(registerByEmail(data))
 
     if(!errors) {
       return setErrors(errors)
@@ -27,6 +34,12 @@ export const AccountPage = () => {
     console.log(errors)
 
     console.log(userData);
+
+    dispatch({type: "", payload: ""})
+  }
+
+  const onAuthAccount = () => {
+    
   }
 
   return (
@@ -42,10 +55,13 @@ export const AccountPage = () => {
                 <div className={cls.block_account}>
                 <div className={cls.auth_block}>
                     <Text as='h3' fz={36} fw={400}>Вход</Text>
+                    {
+                      authError && <Text>{authError}</Text>
+                    }
                     <Form onSubmit={onSubmit} className={cls.auth_form}>
                         <Text className={cls.name_email_txt} as='h6' fz={18} fw={400}>Имя пользователя или Email *</Text>
                         <div className={cls.input_body}>
-                          <input className={cls.input} type='username&email' name='username' onChange={handleChange} value={userData.username}/>
+                          <input className={cls.input} type='username' name='username' onChange={handleChange} value={userData.username}/>
                         </div>
                         <Text className={cls.name_email_txt} as='h6' fz={18} fw={400}>Пароль *</Text>
                         <div className={cls.input_body2}>
@@ -72,10 +88,10 @@ export const AccountPage = () => {
             </div>
                 <div className={cls.register_block}>
                     <Text as='h3' fz={36} fw={400}>Регистрация</Text>
-                    <div className={cls.register_form}>
+                    <Form onSubmit={onSubmit} className={cls.register_form}>
                       <Text className={cls.name_email_txt2} as='h6' fz={18} fw={400}>Email *</Text>
                        <div className={cls.input_body3}>
-                          <input className={cls.input2} type='email'/>
+                          <input className={cls.input2} type='email' name='email' onChange={handleChange} value={userData.email}/>
                         </div>
 
                         <div className={cls.register_txt}>
@@ -99,9 +115,9 @@ export const AccountPage = () => {
                             </span>
                             </div>
 
-                            <Button className={cls.btn} size={91}>Регистрация</Button>
+                            <Button type='submit' className={cls.btn} size={91}>Регистрация</Button>
                         </div>
-                    </div>
+                    </Form>
                 </div>
             </div>
             </div>

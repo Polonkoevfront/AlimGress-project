@@ -9,3 +9,4 @@ export { DesignersOthersPage } from './CooperationPage/DesignersOthersPage/Desig
 export { SearchPage } from './SearchPage/SearchPage'
 export { BulkOrdersPage } from './BulkOrdersPage/BulkOrdersPage'
 export { BlogPage } from './BlogPage/BlogPage'
+export { ProductPage } from './ProductPage/ProductPage'

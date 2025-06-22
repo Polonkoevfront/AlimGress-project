@@ -1,62 +1,67 @@
-import { FC } from 'react';
-import { AppLink } from '../../../provider/ui/AppLink/AppLink'
-import { Button, Text } from '../../../shared'
-import cls from './CeramicaCards.module.scss'
-import glossy from '../../../shared/assets/png/Glossy/Glossy1.png'
-import glossy2 from '../../../shared/assets/png/Glossy/Glossy2.png'
-import glossy3 from '../../../shared/assets/png/Glossy/Glossy3.png'
-import glossy4 from '../../../shared/assets/png/Glossy/Glossy4.png'
+import React, { FC, useEffect, useState } from 'react';
+import { AppLink } from '../../../provider/ui/AppLink/AppLink';
+import { Button, Skeleton } from '../../../shared';
+import cls from './CeramicaCards.module.scss';
 
-interface CeramicaCardsProps {
-    title: string;
-    price: number[];
-    image: string;
-    size: string;
+interface CeramicItem {
+  _id: string;
+  title: string;
+  size: string;
+  price: number;
+  imageUrl: string;
+  made: string;
 }
 
-export const CeramicaCards: FC<CeramicaCardsProps> = (props) => {
-  const cardItem = [
-    {
-      img: glossy,
-      titleNew: "Керамогранит AlimGress",  
-    },
-    {
-      img: glossy2,
-      titleNew: "Керамогранит AlimGress",  
-    },
-    {
-      img: glossy3,
-      titleNew: "Керамогранит AlimGress",  
-    },
-    {
-      img: glossy4,
-      titleNew: "Керамогранит AlimGress",  
-    },
-  ]
+export const CeramicaCards: FC = () => {
+  const [items, setItems] = useState<CeramicItem[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/api/products')
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Ошибка сети');
+        }
+        return res.json();
+      })
+      .then(data => {
+        setItems(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Ошибка при загрузке продуктов:', err);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div className={cls.block}>
-    <div className={cls.cards_block}>
-        {
-          cardItem.map((item, index) => (
-            <article key={index} className={cls.ceramica_card_item}>
-            <img className={cls.image} src={item.img} alt="" />
-            <div>
-                <div className={cls.desc_txt}>
-                <AppLink to="">
-                <span className={cls.desc_item}>{item.titleNew}</span>
-                <span className={cls.desc_item}>{props.title}</span>
-                <span className={cls.desc_item}>{props.size}</span>
+      <div className={cls.cards_block}>
+        {loading
+          ? [...new Array(16)].map((_, index) => (
+              <article key={index} className={cls.ceramica_card_item}>
+                <Skeleton />
+              </article>
+            ))
+          : items.slice(0, 16).map(item => (
+              <article key={item._id} className={cls.ceramica_card_item}>
+                <AppLink to={`/product/${item._id}`}>
+                  <img className={cls.image} src={item.imageUrl}/>
                 </AppLink>
-            </div>
-            <p className={cls.price}>Цена за {props.price} ₽ за м²</p>
-            <Button size={102} className={cls.btn}>В корзину</Button>
-            </div>
-        </article>
-          ))
-        } 
+                <div>
+                  <div className={cls.desc_txt}>
+                    <AppLink to={`/product/${item._id}`}>
+                      <span className={cls.desc_item}>{item.made}</span>
+                      <span className={cls.desc_item}>{item.title}</span>
+                      <span className={cls.desc_item}>{item.size}</span>
+                    </AppLink>
+                  </div>
+                  <p className={cls.price}>Цена за {item.price} ₽ за м²</p>
+                  <Button size={102} className={cls.btn}>В корзину</Button>
+                </div>
+              </article>
+            ))}
+      </div>
     </div>
-    </div>
-  )
-}
-
+  );
+};

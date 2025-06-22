@@ -1,7 +1,5 @@
-import { FC } from 'react';
-import { Sort, Text } from '../../shared'
+import { Skeleton, Sort, Text } from '../../shared'
 import { Category, CeramicaCards, Footer, Navbar } from '../../widgets'
-import ceramica from '../../widgets/ui/Storage/Storage.json'
 import cls from './KeramogranitPage.module.scss'
 
 export const KeramogranitPage = () => {
@@ -18,22 +16,13 @@ export const KeramogranitPage = () => {
             <div className={cls.sort}>
               <Sort/>
 
-              <div style={{marginTop: "10px"}}>
-              {
-                ceramica.map((obj) => (
-                  <CeramicaCards
-                  title={obj.title} 
-                  price={obj.price} 
-                  image={obj.imageUrl}
-                  size={obj.size}
-                />
-              )) 
-              }
+              <div className={cls.block_cards}>
+                <CeramicaCards/>
               </div>
             </div>
         </div>
 
-        <div style={{marginTop: "100px"}}>
+        <div style={{marginTop: "550px"}}>
         <Footer/>
         </div>
 

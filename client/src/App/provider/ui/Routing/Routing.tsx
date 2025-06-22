@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { AboutUsPage, AccountPage, BlogPage, BulkOrdersPage, ContactUsPage, CooperationPage, DealersAuthPage, DesignersOthersPage, HomePage, MyAccountPage, SearchPage } from "../../../pages"
+import { AboutUsPage, AccountPage, BlogPage, BulkOrdersPage, ContactUsPage, CooperationPage, DealersAuthPage, DesignersOthersPage, HomePage, MyAccountPage, ProductPage, SearchPage } from "../../../pages"
 import { CollectionPage } from "../../../pages/CollectionPage/ui/CollectionPage"
 import { KeramogranitPage } from "../../../pages/KeramogranitPage/KeramogranitPage"
 
@@ -21,9 +21,9 @@ export const Routing = () => {
       <Route path="/bulkorders" element={<BulkOrdersPage/>}/>
       <Route path="/about:us" element={<AboutUsPage/>}/>
       <Route path="/contact:us" element={<ContactUsPage/>}/>
+      <Route path="/product/:id" element={<ProductPage/>}/>
    
     </Routes>      
     </>
   )
 }
-

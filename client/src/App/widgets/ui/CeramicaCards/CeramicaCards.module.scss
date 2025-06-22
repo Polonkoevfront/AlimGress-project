@@ -3,11 +3,19 @@
 }
 
 .cards_block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 28px;
     margin-left: -852px;
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .ceramica_card_item {
         width: 233px;
@@ -19,6 +27,7 @@
             height: 233px;
             border-radius: 8px;
             border: 2px solid #d4bfaa;
+            cursor: pointer;
         }
 
         .desc_txt {
@@ -28,6 +37,7 @@
         .desc_item {
             display: block;
             text-align: center;
+            text-decoration: none;
             color: #000;
         }
 
