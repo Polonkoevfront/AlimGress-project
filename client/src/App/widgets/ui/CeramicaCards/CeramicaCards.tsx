@@ -3,6 +3,10 @@ import { AppLink } from '../../../provider/ui/AppLink/AppLink';
 import { Button, Skeleton } from '../../../shared';
 import cls from './CeramicaCards.module.scss';
 
+interface CeramicaCardsProps {
+  categoryId: number;
+}
+
 interface CeramicItem {
   _id: string;
   title: string;
@@ -12,12 +16,12 @@ interface CeramicItem {
   made: string;
 }
 
-export const CeramicaCards: FC = () => {
+export const CeramicaCards: FC<CeramicaCardsProps> = ({ categoryId }) => {
   const [items, setItems] = useState<CeramicItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch(`http://localhost:5000/api/products?category=${categoryId}`)
       .then(res => {
         if (!res.ok) {
           throw new Error('Ошибка сети');
@@ -32,7 +36,7 @@ export const CeramicaCards: FC = () => {
         console.error('Ошибка при загрузке продуктов:', err);
         setLoading(false);
       });
-  }, []);
+  }, [categoryId]);
 
   return (
     <div className={cls.block}>

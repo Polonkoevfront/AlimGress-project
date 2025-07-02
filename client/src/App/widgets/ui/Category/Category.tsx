@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { FC } from 'react'
 import { Text } from '../../../shared'
 import cls from './Category.module.scss'
 
@@ -16,16 +16,30 @@ const categoryScopeApplication = [
   { title: "Область", title2: "применения", scopes: ["Для ванной", "Для гостиной", "Для коридора", "Для кухни", "Для общественных", "помещений", "Для улицы"] }
 ]
 
-export const Category = () => {
+interface CategoryProps {
+  value: number;
+  onClickCategory: (id: number) => void;
+}
+
+export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
+  console.log(value)
   const [activeLength, setActiveLength] = React.useState<number[]>([])
   const [activeWidth, setActiveWidth] = React.useState<number[]>([])
   const [activeColor, setActiveColor] = React.useState<number[]>([])
   const [activeScope, setActiveScope] = React.useState<number[]>([])
 
-  const toggleActive = (arr: number[], setArr: React.Dispatch<React.SetStateAction<number[]>>, idx: number) => {
-    setArr(prev =>
-      prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx]
-    )
+  const toggleActive = (
+    arr: number[],
+    setArr: React.Dispatch<React.SetStateAction<number[]>>,
+    idx: number
+  ) => {
+    const isActive = arr.includes(idx)
+    if (isActive) {
+      setArr(arr.filter(i => i !== idx))
+    } else {
+      setArr([...arr, idx])
+      onClickCategory(idx)
+    }
   }
 
   return (
@@ -36,7 +50,8 @@ export const Category = () => {
           {item.sizes.map((size, idx) => (
             <div style={{ display: "flex", alignItems: "center"}} key={idx}>
               <div
-                onClick={() => toggleActive(activeLength, setActiveLength, idx)}
+                onClick={() => toggleActive(activeLength, setActiveLength, idx) 
+                }
                 className={cls.block_figure}
               >
                 {activeLength.includes(idx) && (

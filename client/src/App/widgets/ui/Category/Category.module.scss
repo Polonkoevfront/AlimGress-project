@@ -66,14 +66,14 @@
     height: 18px;
     border-radius: 4px;
     border: 1px solid #808080;
-    margin-right: 10px; // Отступ между галочкой и текстом
+    margin-right: 10px;
     cursor: pointer;
-    position: relative; // Для позиционирования SVG внутри
-    flex-shrink: 0; // Запрещаем сжатие
+    position: relative; 
+    flex-shrink: 0; 
   }
 
   li {
-    margin: 8px 3px; // Вертикальные отступы между пунктами
+    margin: 8px 3px;
     display: flex;
     align-items: center;
   }
