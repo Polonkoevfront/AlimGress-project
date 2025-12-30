@@ -10,11 +10,68 @@
         position: absolute;
         left: 0;
         top: 0;
-        margin-left: 1225px;
+        // margin-left: 1225px;
+        margin-left: 1390px;
         margin-top: 260px;
     }
 
     .block_cards {
         margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .keramogranit {
+
+        .keramogranit_body {
+
+            margin-left: 120px;
+            padding-top: 30px;
+
+            .keramogranit_logo {
+                font-size: 30px;
+            }
+        }
+
+        .sort {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: 1020px;
+            margin-top: 260px;
+        }
+
+        .block_cards {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .keramogranit {
+
+        .keramogranit_body {
+
+            margin-left: 100px;
+            padding-top: 30px;
+
+            .keramogranit_logo {
+                font-size: 24px;
+            }
+        }
+
+        .sort {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: 758px;
+            margin-top: 239px;
+        }
+
+        .block_cards {
+            margin-top: 10px;
+        }
     }
 }

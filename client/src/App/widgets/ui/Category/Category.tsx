@@ -21,7 +21,7 @@ interface CategoryProps {
   onClickCategory: (id: number) => void;
 }
 
-export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
+export const Category: FC<CategoryProps> = ({ value, onClickCategory }) => {
   console.log(value)
   const [activeLength, setActiveLength] = React.useState<number[]>([])
   const [activeWidth, setActiveWidth] = React.useState<number[]>([])
@@ -48,15 +48,15 @@ export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
         <ul className={cls.category_block_item} key={index}>
           <Text className={cls.text_block} as='h3' fz={28} fw={400}>{item.title}</Text>
           {item.sizes.map((size, idx) => (
-            <div style={{ display: "flex", alignItems: "center"}} key={idx}>
+            <div style={{ display: "flex", alignItems: "center" }} key={idx}>
               <div
-                onClick={() => toggleActive(activeLength, setActiveLength, idx) 
+                onClick={() => toggleActive(activeLength, setActiveLength, idx)
                 }
                 className={cls.block_figure}
               >
                 {activeLength.includes(idx) && (
-                  <svg style={{ position: "absolute", left: -2, top: -4, width: "18px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
-                    <path d='M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
+                  <svg style={{ position: "absolute", left: -4, top: -8, width: "15px", cursor: "pointer" }} xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M9 16.2L6.1 13l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z'></path>
                   </svg>
                 )}
               </div>
@@ -68,9 +68,9 @@ export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
 
       {categoryWidth.map((item, index) => (
         <ul className={cls.category_block_item2} key={index}>
-          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          <Text className={cls.text_block} as='h3' fz={28} fw={400}>{item.title}</Text>
           {item.sizes.map((size, idx) => (
-            <div style={{ display: "flex", alignItems: "center",}} key={idx}>
+            <div style={{ display: "flex", alignItems: "center", }} key={idx}>
               <div
                 onClick={() => toggleActive(activeWidth, setActiveWidth, idx)}
                 className={cls.block_figure2}
@@ -89,7 +89,7 @@ export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
 
       {categoryColor.map((item, index) => (
         <ul className={cls.category_block_item2} key={index}>
-          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          <Text className={cls.text_block} as='h3' fz={28} fw={400}>{item.title}</Text>
           {item.colors.map((color, idx) => (
             <div style={{ display: "flex", alignItems: "center" }} key={idx}>
               <div
@@ -110,10 +110,10 @@ export const Category: FC<CategoryProps> = ( { value, onClickCategory} ) => {
 
       {categoryScopeApplication.map((item, index) => (
         <ul className={cls.category_block_item2} key={index}>
-          <Text as='h3' fz={28} fw={400}>{item.title}</Text>
+          <Text className={cls.text_block} as='h3' fz={28} fw={400}>{item.title}</Text>
           <Text className={cls.title_2} as='h3' fz={28} fw={400}>{item.title2}</Text>
           {item.scopes.map((scope, idx) => (
-            <div style={{ display: "flex", alignItems: "center",}} key={idx}>
+            <div style={{ display: "flex", alignItems: "center", }} key={idx}>
               {scope === "помещений" ? (
                 <li style={{ marginTop: "2px" }}>{scope}</li>
               ) : (

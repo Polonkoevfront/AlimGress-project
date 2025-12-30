@@ -2,109 +2,110 @@
     width: 100%;
     height: 100vh;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-slabs-maimoon-ceramica-11.webp);
-    background-size: cover; 
+    background-size: cover;
     box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
-     
-        .purchase_block {
-            margin-left: 825px;
-            margin-top: 255px;
 
-            .home_logo_txt {
+    .purchase_block {
+        height: 600px;
+        margin-left: 1200px;
+        margin-top: 300px;
+
+        .home_logo_txt {
+            color: #ffffff;
+        }
+
+        .desc_block {
+            position: relative;
+            margin-top: -10px;
+
+            .desc_txt {
+                display: block;
                 color: #ffffff;
+                font-size: 18px;
+                margin-top: 2px;
             }
 
-            .desc_block {
-                position: relative;
-                margin-top: -10px;
+            .flag {
+                width: 16.5px;
+            }
 
-                .desc_txt {
-                    display: block;
-                    color: #ffffff;
-                    font-size: 18px;
-                    margin-top: 2px;
-                }
+            .btn {
+                margin-top: 22px;
+            }
+        }
+    }
 
-                .flag {
-                    width: 16.5px;
-                }
+    .alimgress_block {
+        height: 1300px;
+        background: #ffffff;
+        margin-top: 254px;
 
-                .btn {
-                    margin-top: 22px;
-                }
+        .alimgress_video_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: -110px;
+
+            .alimgress_logo_txt {
+                margin-top: 92px;
+            }
+
+            .alimgress_video {
+                width: 620px;
+                height: 348px;
+            }
+
+            .alimgress_desc {
+                color: #636363;
+                font-size: 13.5px;
+                margin-left: -393px;
+                margin-top: 6px;
             }
         }
 
-        .alimgress_block {
-            height: 1300px;
-            background: #ffffff;
-            margin-top: 254px;
+        .advantages {
+            margin-top: 80px;
 
-            .alimgress_video_block {
+            .block_cards {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                text-align: center;
-                margin-top: -110px;
-
-                .alimgress_logo_txt {
-                    margin-top: 92px;
-                }
-
-                .alimgress_video {
-                    width: 620px;
-                    height: 348px;
-                }
-
-                .alimgress_desc {
-                    color: #636363;
-                    font-size: 13.5px;
-                    margin-left: -393px;
-                    margin-top: 6px;
-                }
+                gap: 30px;
             }
 
-            .advantages {
-                margin-top: 80px;
+            .advantages_logo_txt {
+                text-align: center;
+            }
 
-                .block_cards {
+            .card_item {
+
+                .card_img {
+                    width: 140px;
+                    margin-left: 46px;
+                }
+
+                .card_logo_txt {
                     display: flex;
+                    align-items: center;
                     justify-content: center;
-                    gap: 30px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin-top: 12px;
                 }
 
-                .advantages_logo_txt {
-                    text-align: center;
-                }
+                .card_desc_block {
+                    margin-top: 36px;
 
-                .card_item {
-
-                    .card_img {
-                        width: 140px;
-                        margin-left: 46px;
-                    }
-
-                    .card_logo_txt {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 17px;
-                        font-weight: 700;
-                        margin-top: 12px;
-                    }
-
-                    .card_desc_block {
-                        margin-top: 36px;
-
-                        .card_desc_item {
-                            margin-top: -12px;
-                        }
+                    .card_desc_item {
+                        margin-top: -12px;
                     }
                 }
             }
         }
+    }
 }
 
 .collections_card_block {
@@ -117,19 +118,21 @@
     .collections_card_wrap {
         display: flex;
         margin-left: -22px;
+        gap: 10px;
 
         .collections_card_item {
+
             margin-left: 24px;
             margin-top: 10px;
         }
-        
+
         .collections_image {
             width: 320px;
             height: 319px;
             border-radius: 1.5rem;
-            object-fit: cover;      
+            object-fit: cover;
             object-position: center;
-            
+
             cursor: pointer;
         }
 
@@ -147,11 +150,11 @@
 }
 
 .form_block {
-    width: 1519px;
+    width: 1839px;
     height: 600px;
     background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-gloster-maimoon-ceramica-1.webp);
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: cover;
     box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
     margin-top: 600px;
@@ -159,7 +162,7 @@
     .form_body {
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
+        margin-left: 120px;
         margin-top: 100px;
 
         .logo_txt {
@@ -193,15 +196,11 @@
         justify-content: center;
         margin-top: 60px;
 
-        .consultation_form_logo_txt {
-
-        }
-
         .consultation_form {
             width: 940px;
             height: 455px;
             background: #f4e5d7;
-            border-radius: 20px;            
+            border-radius: 20px;
             border: 2px solid #f47b50;
             padding: 20px;
             box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
@@ -215,7 +214,7 @@
                 }
 
                 .input_item {
-                    width: 752px;
+                    width: 920px;
                     height: 16px;
                     border-radius: 4px;
                     border: 2px solid #f47b50;
@@ -230,7 +229,7 @@
                 margin-top: 20px;
 
                 .input_item {
-                    width: 752px;
+                    width: 920px;
                     height: 16px;
                     border-radius: 4px;
                     border: 2px solid #f47b50;
@@ -239,53 +238,1016 @@
                 }
             }
 
-    .data_block {
-        display: flex;
-        margin-top: 24px;
+            .data_block {
+                display: flex;
+                margin-top: 24px;
 
-        .cube {
-            width: 11px;
-            height: 11px;
-            background: #ffffff;
-            border: 1px solid #969696;
-            border-radius: 3px;
-            transition: all 0.2s ease;
-            margin-top: 5px;
+                .cube {
+                    width: 11px;
+                    height: 11px;
+                    background: #ffffff;
+                    border: 1px solid #969696;
+                    border-radius: 3px;
+                    transition: all 0.2s ease;
+                    margin-top: 5px;
+                    cursor: pointer;
 
-        &:hover {
-            border: 1px solid #5c5c5c;
+                    &:hover {
+                        border: 1px solid #5c5c5c;
+                    }
+                }
+
+                .data_block_txt {
+                    font-size: 17px;
+                    margin-left: 10px;
+                }
+            }
+
+            .link {
+                display: flex;
+                flex-direction: column;
+                width: 287px;
+                color: #000;
+                font-size: 17px;
+                margin-left: 0px;
+                margin-top: 10px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .required_field {
+                font-size: 15px;
+                margin-top: 8px;
+            }
+
+            .btn {
+                box-shadow: 0px 3.5px 0px #b5441b;
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .purchase_block {
+
+        .home_logo_txt {
+            font-size: 26px;
+            margin-left: -400px;
+            margin-top: -50px;
+        }
+
+        .desc_block {
+
+            span {
+                font-size: 14px !important;
+                margin-left: -400px;
+            }
+
+            .btn {
+                width: 162px;
+                height: 35px;
+                font-size: 14px;
+                margin-left: -400px;
+            }
         }
     }
 
-    .data_block_txt {
-        font-size: 17px;
-        margin-left: 10px;
+    .alimgress_block {
+        height: 1300px;
+        background: #ffffff;
+        margin-top: 254px;
+
+        .alimgress_video_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: -110px;
+
+            .alimgress_logo_txt {
+                font-size: 30px;
+                margin-top: 92px;
+            }
+
+            .alimgress_video {
+                width: 570px !important;
+                height: 344px !important;
+                margin-top: -10px;
+            }
+
+            .alimgress_desc {
+                color: #636363;
+                font-size: 12px !important;
+                margin-left: -367px !important;
+                margin-top: 6px;
+            }
+        }
+
+        .advantages {
+            margin-top: 80px;
+
+            .block_cards {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .advantages_logo_txt {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .card_item {
+
+                .card_img {
+                    width: 100px !important;
+                    margin-left: 46px;
+                }
+
+                .card_logo_txt {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px !important;
+                    font-weight: 700;
+                    margin-top: 12px;
+                }
+
+                .card_desc_block {
+                    margin-top: 36px;
+
+                    .card_desc_item {
+                        font-size: 14px;
+                        margin-top: -12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .collections_card_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .collection_card_logo {
+            font-size: 26px;
+        }
+
+        .collections_card_wrap {
+            display: flex;
+            margin-left: -22px;
+
+            .collections_card_item {
+                width: 270px !important;
+                height: 269px !important;
+                margin-left: 24px;
+                margin-top: 10px;
+            }
+
+            .collections_image {
+                width: inherit !important;
+                height: inherit !important;
+                border-radius: 1.5rem;
+                object-fit: cover;
+                object-position: center;
+
+                cursor: pointer;
+            }
+
+            .collections_card_title {
+                display: flex;
+                color: #000;
+                font-size: 14px;
+                margin-top: 14px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .form_block {
+        width: 1839px;
+        height: 600px;
+        background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-gloster-maimoon-ceramica-1.webp);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
+        margin-top: 500px;
+
+        .form_body {
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            padding-top: 100px;
+
+            .logo_txt {
+                color: #ffffff;
+                font-size: 26px;
+                padding-top: 20px;
+            }
+
+            .form_desc_block {
+                margin-top: -55px;
+
+                .desc_item {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+            }
+
+            .btn {
+                width: 119px;
+                height: 35px;
+                font-size: 13.5px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .consultation_bg {
+
+        .consultation_form_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+
+            .consultation_form_logo_txt {
+                font-size: 26px;
+            }
+
+            .consultation_form {
+                width: 700px;
+                height: 384px;
+                background: #f4e5d7;
+                border-radius: 20px;
+                border: 2px solid #f47b50;
+                padding: 20px;
+                box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
+
+                .consultation_logo_txt {
+                    font-size: 26px;
+                }
+
+                .input_block {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 14px;
+                    }
+
+                    .input_item {
+                        width: 680px;
+                        height: 12px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        margin-top: 4px;
+                    }
+                }
+
+                .input_block2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: 14px;
+                    }
+
+                    .input_item {
+                        width: 680px;
+                        height: 12px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        margin-top: 4px;
+                    }
+                }
+
+                .data_block {
+                    display: flex;
+                    margin-top: 24px;
+
+                    .cube {
+                        width: 10px;
+                        height: 10px;
+                        background: #ffffff;
+                        border: 1px solid #969696;
+                        border-radius: 3px;
+                        transition: all 0.2s ease;
+                        margin-top: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 1px solid #5c5c5c;
+                        }
+                    }
+
+                    .data_block_txt {
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .link {
+                    display: flex;
+                    flex-direction: column;
+                    width: 287px;
+                    color: #000;
+                    font-size: 14px;
+                    margin-left: 0px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .required_field {
+                    font-size: 14px;
+                    margin-top: 8px;
+                }
+
+                .btn {
+                    width: 148px;
+                    height: 32px;
+                    font-size: 14px;
+                    box-shadow: 0px 3.5px 0px #b5441b;
+                    margin-top: 7px;
+                }
+            }
+        }
     }
 }
 
- .link {
-    display: flex;
-    flex-direction: column;
-    width: 287px;
-    color: #000;
-    font-size: 17px;
-    margin-left: 0px;
-    margin-top: 10px;
 
-    &:hover {
-        text-decoration: none;
+
+@media (max-width: 1024px) {
+    .purchase_block {
+        margin-left: 990px !important;
+
+        .home_logo_txt {
+            font-size: 20px;
+            margin-left: -400px;
+            margin-top: -140px;
+        }
+
+        .desc_block {
+
+            span {
+                font-size: 13px !important;
+                margin-left: -400px;
+            }
+
+
+            .btn {
+                width: 146px;
+                height: 32px;
+                font-size: 12px;
+                margin-left: -400px;
+            }
+        }
+    }
+
+    .alimgress_block {
+        height: 1300px;
+        background: #ffffff;
+        margin-top: 0px !important;
+
+        .alimgress_video_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: -110px;
+
+            .alimgress_logo_txt {
+                font-size: 24px;
+                margin-top: 92px;
+            }
+
+            .alimgress_video {
+                width: 500px !important;
+                height: 300px !important;
+                margin-top: -10px;
+            }
+
+            .alimgress_desc {
+                color: #636363;
+                font-size: 12px !important;
+                margin-left: -299px !important;
+                margin-top: 6px;
+            }
+        }
+
+        .advantages {
+            margin-top: 150px !important;
+
+            .block_cards {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                align-items: start !important;
+                justify-content: start !important;
+                gap: 10px !important;
+            }
+
+            .advantages_logo_txt {
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .card_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+
+                .card_img {
+                    width: 70px !important;
+                    margin-left: 0px !important;
+                }
+
+                .card_logo_txt {
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    font-size: 13px !important;
+                    font-weight: 700;
+                    margin-top: 12px;
+                }
+
+                .card_desc_block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-top: 36px;
+
+                    .card_desc_item {
+                        font-size: 13px;
+                        margin-top: -12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .collections_card_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+
+        .collection_card_logo {
+            font-size: 20px;
+        }
+
+        .collections_card_wrap {
+            display: flex;
+            margin-left: -22px;
+
+            .collections_card_item {
+                width: 180px !important;
+                height: 179px !important;
+                margin-left: 24px;
+                margin-top: 10px;
+            }
+
+            .collections_image {
+                width: inherit !important;
+                height: inherit !important;
+                border-radius: 1.5rem;
+                object-fit: cover;
+                object-position: center;
+
+                cursor: pointer;
+            }
+
+            .collections_card_title {
+                display: flex;
+                color: #000;
+                font-size: 14px;
+                margin-top: 14px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .form_block {
+        width: 1024px;
+        height: 600px;
+        background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-gloster-maimoon-ceramica-1.webp);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
+        margin-top: 500px;
+
+        .form_body {
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            padding-top: 100px;
+
+            .logo_txt {
+                color: #ffffff;
+                font-size: 26px;
+                padding-top: 20px;
+            }
+
+            .form_desc_block {
+                margin-top: -55px;
+
+                .desc_item {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+            }
+
+            .btn {
+                width: 119px;
+                height: 35px;
+                font-size: 13.5px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .consultation_bg {
+
+        .consultation_form_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+
+            .consultation_form_logo_txt {
+                font-size: 20px;
+            }
+
+            .consultation_form {
+                width: 600px;
+                height: 360px;
+                background: #f4e5d7;
+                border-radius: 20px;
+                border: 2px solid #f47b50;
+                padding: 20px;
+                box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
+
+                .consultation_logo_txt {
+                    font-size: 20px;
+                }
+
+                .input_block {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 13px;
+                    }
+
+                    .input_item {
+                        width: 577px;
+                        height: 10px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        margin-top: 4px;
+                    }
+                }
+
+                .input_block2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: 13px;
+                    }
+
+                    .input_item {
+                        width: 577px;
+                        height: 10px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        margin-top: 4px;
+                    }
+                }
+
+                .data_block {
+                    display: flex;
+                    margin-top: 24px;
+
+                    .cube {
+                        width: 9px;
+                        height: 9px;
+                        background: #ffffff;
+                        border: 1px solid #969696;
+                        border-radius: 3px;
+                        transition: all 0.2s ease;
+                        margin-top: 2px;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 1px solid #5c5c5c;
+                        }
+                    }
+
+                    .data_block_txt {
+                        font-size: 13px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .link {
+                    display: flex;
+                    flex-direction: column;
+                    width: 287px;
+                    color: #000;
+                    font-size: 13px;
+                    margin-left: 0px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .required_field {
+                    font-size: 13px;
+                    margin-top: 8px;
+                }
+
+                .btn {
+                    width: 140px !important;
+                    height: 32px;
+                    font-size: 13px;
+                    box-shadow: 0px 3.5px 0px #b5441b;
+                    margin-top: 7px;
+                }
+            }
+        }
     }
 }
 
-.required_field {
-    font-size: 15px;
-    margin-top: 8px;
-}
 
-    .btn {
-        box-shadow: 0px 3.5px 0px #b5441b;
-        margin-top: 7px;
-    } 
-}
-}
+
+@media (max-width: 412px) {
+    .home {
+        width: 100%;
+        height: 100vh;
+        // background-position: center;
+        // background-attachment: fixed;
+        // background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-slabs-maimoon-ceramica-11.webp);
+        // background-size: cover;
+        // box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
+
+        background: #000;
+    }
+
+    .purchase_block {
+        margin-left: 445px !important;
+
+        .home_logo_txt {
+            font-size: 15px;
+            margin-left: -400px;
+            margin-top: -140px;
+        }
+
+        .desc_block {
+
+            span {
+                font-size: 11px !important;
+                margin-left: -400px;
+                margin-top: -3px !important;
+            }
+
+            .btn {
+                width: 134px;
+                height: 26px;
+                font-size: 10px;
+                margin-left: -310px;
+            }
+        }
+    }
+
+    .alimgress_block {
+        height: 1300px;
+        background: #ffffff;
+        margin-top: 0px !important;
+
+        .alimgress_video_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: -110px;
+
+            .alimgress_logo_txt {
+                font-size: 15px;
+                margin-top: 92px;
+            }
+
+            .alimgress_video {
+                width: 350px !important;
+                height: 180px !important;
+                margin-top: -10px;
+            }
+
+            .alimgress_desc {
+                color: #636363;
+                font-size: 9px !important;
+                margin-left: -197px !important;
+                margin-top: 6px;
+            }
+        }
+
+        .advantages {
+            margin-top: 150px !important;
+
+            .block_cards {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                align-items: start !important;
+                justify-content: start !important;
+                margin-top: 50px !important;
+                gap: 5px !important;
+            }
+
+            .advantages_logo_txt {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .card_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+
+                .card_img {
+                    width: 40px !important;
+                    margin-left: 0px !important;
+                }
+
+                .card_logo_txt {
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    font-size: 11px !important;
+                    font-weight: 700;
+                    margin-top: 12px;
+                }
+
+                .card_desc_block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-top: 25px !important;
+
+                    .card_desc_item {
+                        font-size: 11px;
+                        margin-top: -8px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .collections_card_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+
+        .collection_card_logo {
+            font-size: 15px;
+        }
+
+        .collections_card_wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: -22px;
+            margin-top: -20px;
+
+            .collections_card_item {
+                width: 160px !important;
+                height: 159px !important;
+                margin-left: 24px !important;
+                margin-top: 50px;
+            }
+
+            .collections_image {
+                width: inherit !important;
+                height: inherit !important;
+                border-radius: 1.5rem;
+                object-fit: cover;
+                object-position: center;
+
+                cursor: pointer;
+            }
+
+            .collections_card_title {
+                display: flex;
+                color: #000;
+                font-size: 11px;
+                margin-top: 5px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .form_block {
+        width: 1024px;
+        height: 600px;
+        background-image: url(https://maimoonceramica.ru/wp-content/uploads/2025/01/kollekciya-gloster-maimoon-ceramica-1.webp);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: inset 700px -220px 180px 200px rgba(0, 0, 0, 0.5);
+        margin-top: 500px;
+
+        background: #000 !important;
+
+        .form_body {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            padding-top: 100px;
+
+            .logo_txt {
+                color: #ffffff;
+                font-size: 15px;
+                padding-top: 20px;
+            }
+
+            .form_desc_block {
+                margin-top: -30px;
+
+                .desc_item {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 11px;
+                    margin-top: 3px;
+                }
+            }
+
+            .btn {
+                width: 88px;
+                height: 26px;
+                font-size: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .consultation_bg {
+
+        .consultation_form_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+
+            .consultation_form_logo_txt {
+                font-size: 15px;
+            }
+
+            .consultation_form {
+                width: 200px;
+                height: 322px;
+                background: #f4e5d7;
+                border-radius: 20px;
+                border: 2px solid #f47b50;
+                padding: 20px;
+                box-shadow: 0px 6px 8px rgb(5, 5, 5, 0.3);
+
+                .consultation_logo_txt {
+                    font-size: 15px;
+                }
+
+                .input_block {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 11px;
+                    }
+
+                    .input_item {
+                        width: 180px;
+                        height: 7px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        outline: none;
+                        margin-top: 4px;
+                    }
+                }
+
+                .input_block2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: 11px;
+                    }
+
+                    .input_item {
+                        width: 180px;
+                        height: 7px;
+                        border-radius: 4px;
+                        border: 2px solid #f47b50;
+                        padding: 8px;
+                        outline: none;
+                        margin-top: 4px;
+                    }
+                }
+
+                .data_block {
+                    display: flex;
+                    margin-top: 24px;
+
+                    .cube {
+                        width: 8.5px;
+                        height: 7px;
+                        background: #ffffff;
+                        border: 1px solid #969696;
+                        border-radius: 3px;
+                        transition: all 0.2s ease;
+                        margin-top: 2px;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 1px solid #5c5c5c;
+                        }
+                    }
+
+                    .data_block_txt {
+                        font-size: 11px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .link {
+                    display: flex;
+                    flex-direction: column;
+                    width: 287px;
+                    color: #000;
+                    font-size: 11px;
+                    margin-left: 0px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .required_field {
+                    font-size: 11px;
+                    margin-top: 8px;
+                }
+
+                .btn {
+                    width: 106px !important;
+                    height: 26px;
+                    font-size: 9px;
+                    box-shadow: 0px 3.5px 0px #b5441b;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
 }

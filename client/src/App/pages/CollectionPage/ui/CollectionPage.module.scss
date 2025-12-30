@@ -5,7 +5,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
- 
+
         .collection_logo {
             margin-top: 112px;
         }
@@ -18,7 +18,7 @@
     }
 
     .collection_form1 {
-        flex: 0 1 calc(50% - 16px); 
+        flex: 0 1 calc(50% - 16px);
         box-sizing: border-box;
 
         .collection_form1_logo_txt {
@@ -43,6 +43,121 @@
             height: 456px;
             border-radius: 20px;
             margin-top: -24px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .collection {
+
+        .collection_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .collection_logo {
+                font-size: 26px;
+                margin-top: 112px;
+            }
+        }
+
+        .first_collection_block {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 62px;
+            margin-top: 30px;
+        }
+
+        .collection_form1 {
+            flex: 0 1 calc(50% - 16px);
+            box-sizing: border-box;
+
+            .collection_form1_logo_txt {
+                font-size: 20px;
+                color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .collection_form1_logo_txt2 {
+                font-size: 20px;
+                color: #000;
+                margin-top: -24px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .collection_form1_image {
+                //152
+                width: 488px;
+                height: 336px;
+                border-radius: 20px;
+                margin-top: -10px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .collection {
+
+        .collection_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .collection_logo {
+                font-size: 20px;
+                margin-top: 112px;
+            }
+        }
+
+        .first_collection_block {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 46px;
+            margin-top: 30px;
+        }
+
+        .collection_form1 {
+            flex: 0 1 calc(50% - 16px);
+            box-sizing: border-box;
+
+            .collection_form1_logo_txt {
+                font-size: 15px;
+                color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .collection_form1_logo_txt2 {
+                font-size: 15px;
+                color: #000;
+                margin-top: -20px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .collection_form1_image {
+                //152
+                width: 390px;
+                height: 270px;
+                border-radius: 20px;
+                margin-top: -10px;
+            }
         }
     }
 }

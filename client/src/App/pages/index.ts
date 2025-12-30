@@ -1,5 +1,6 @@
 export { HomePage } from './HomePage/HomePage'
-export { AccountPage } from './AccountPage/AccountPage'
+export { LoginPage } from './AccountPage/LoginPage/LoginPage'
+export { RegisterPage } from './AccountPage/RegisterPage/RegisterPage'
 export { AboutUsPage } from './AboutUsPage/AboutUsPage'
 export { MyAccountPage } from './AccountPage//MyAccountPage/MyAccountPage'
 export { CooperationPage } from './CooperationPage/CooperationPage'

@@ -25,42 +25,42 @@
                 position: relative;
 
                 .cooperation_link {
-                   display: block;
-                   text-align: start;
-                   width: 169px;
-                   height: 0;
-                   color: #000;
-                   font-size: 17px;
-                   margin-top: 18px;
-    
-                   &:hover {
-                       text-decoration: none;
-                   }
+                    display: block;
+                    text-align: start;
+                    width: 169px;
+                    height: 0;
+                    color: #000;
+                    font-size: 17px;
+                    margin-top: 18px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
 
                 .cooperation_link2 {
-                   width: 169px;
-                   height: 0;
-                   color: #000;
-                   font-size: 17px;
-                   margin-left: -43px;
-    
-                   &:hover {
-                       text-decoration: none;
-                   }
+                    width: 169px;
+                    height: 0;
+                    color: #000;
+                    font-size: 17px;
+                    margin-left: -43px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
 
                 .cooperation_link3 {
-                   display: block;
-                   width: 169px;
-                   height: 0;
-                   color: #000;
-                   font-size: 17px;
-                   margin-left: -33px;
-    
-                   &:hover {
-                       text-decoration: none;
-                   }
+                    display: block;
+                    width: 169px;
+                    height: 0;
+                    color: #000;
+                    font-size: 17px;
+                    margin-left: -33px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
 
                 .img {
@@ -76,7 +76,199 @@
                     display: block;
                     margin-top: 18px;
                 }
-            }            
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .cooperation {
+
+        .cooperation_body {
+            text-align: center;
+            margin-top: 112px;
+
+            .cooperation_logo {
+                font-size: 26px;
+            }
+
+            .cooperation_desc1 {
+                font-size: 14px;
+            }
+
+            .cooperation_desc2 {
+                display: block;
+                font-size: 14px;
+                margin-top: 2px;
+            }
+
+            .direction_cooperation {
+
+                .direction_cooperation_logo {
+                    font-size: 14px !important;
+                }
+
+                .cooperation_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+
+                    position: relative;
+
+                    .cooperation_link {
+                        display: block;
+                        text-align: start;
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 14px;
+                        margin-top: 18px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .cooperation_link2 {
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 14px;
+                        margin-left: -43px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .cooperation_link3 {
+                        display: block;
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 14px;
+
+                        margin-left: -37px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .img {
+                        width: 270px;
+                        margin-top: -18px;
+                    }
+
+                    .img2 {
+                        width: 270px;
+                    }
+
+                    .link_block {
+                        display: block;
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .cooperation {
+
+        .cooperation_body {
+            text-align: center;
+            margin-top: 112px;
+
+            .cooperation_logo {
+                font-size: 20px;
+            }
+
+            .cooperation_desc1 {
+                font-size: 13px;
+            }
+
+            .cooperation_desc2 {
+                display: block;
+                font-size: 13px;
+                margin-top: 2px;
+            }
+
+            .direction_cooperation {
+
+                .direction_cooperation_logo {
+                    font-size: 13px !important;
+                }
+
+                .cooperation_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+
+                    position: relative;
+
+                    .cooperation_link {
+                        display: block;
+                        text-align: start;
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 13px;
+                        margin-top: 18px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .cooperation_link2 {
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 13px;
+                        margin-left: -19px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .cooperation_link3 {
+                        display: block;
+                        width: 169px;
+                        height: 0;
+                        color: #000;
+                        font-size: 13px;
+
+                        margin-left: -40px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .img {
+                        width: 212px;
+                        margin-top: -18px;
+                    }
+
+                    .img2 {
+                        width: 212px;
+                    }
+
+                    .link_block {
+                        display: block;
+                        margin-top: 18px;
+                    }
+                }
+            }
         }
     }
 }

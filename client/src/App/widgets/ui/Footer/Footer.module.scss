@@ -13,7 +13,6 @@
 
 .line {
     width: 160px;
-    height: 0.1px;
     border: 0.1px solid #000;
 }
 
@@ -112,7 +111,7 @@
             list-style: none;
             margin-left: 20px;
 
-             .about_item {
+            .about_item {
                 font-size: 17px;
                 font-weight: 600;
             }
@@ -163,12 +162,12 @@
 }
 
 .footer_latest_block {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 780px;
     margin-top: 545px;
-    
+
     .desc_item {
         color: #ffffff;
         font-size: 15px;
@@ -179,4 +178,381 @@
         font-size: 15px;
         margin-top: 2px;
     }
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .made_india {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    .india_flag {
+        width: 50px;
+        margin-top: 40px;
+    }
+
+    .line {
+        width: 160px;
+        border: 0.1px solid #000;
+    }
+
+    .footer {
+        height: 800px;
+        background: #c6aa8d;
+        background-image: url(../../../shared/assets/png/alimgress_bg_png.png);
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        margin-top: 100px;
+
+        position: relative;
+
+        .footer_first_block {
+            position: absolute;
+            margin-left: 90px;
+            margin-top: 75px;
+
+            .alimgress_logo {
+                width: 150px;
+            }
+
+            .alimgress_logo_txt {
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 600;
+                margin-left: 32px;
+                margin-top: -16px;
+            }
+
+            .alimgress_desc_block {
+                padding-left: 31px;
+                padding-top: 4px;
+
+                .alimgress_desc {
+                    display: block;
+                    color: #636363;
+                    font-size: 15px;
+                    font-weight: normal;
+                    margin-top: 3px;
+                }
+            }
+
+            .alimgress_desc_block2 {
+                margin-left: 32px;
+                margin-top: 20px;
+
+                .alimgress_desc2 {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+            }
+
+            .date {
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 10%;
+                margin-top: 63%;
+            }
+        }
+
+        .footer_second_block {
+            display: flex;
+            margin-left: 570px;
+            padding-top: 88px;
+
+            .about_us_block {
+                list-style: none;
+
+                .about_item {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-top: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .politics {
+                list-style: none;
+                margin-left: 20px;
+
+                .about_item {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-top: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .networks_block {
+                list-style: none;
+                margin-left: 24px;
+
+                .about_item {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-top: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .text {
+        color: #f47b50;
+        font-family: "Tinos", serif;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .footer_latest_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 631px;
+        margin-top: 400px;
+
+        .desc_item {
+            color: #ffffff;
+            font-size: 13px;
+        }
+
+        .desc_item2 {
+            color: #ffffff;
+            font-size: 13px;
+            margin-top: 2px;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+    .made_india {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    .india_flag {
+        width: 50px;
+        margin-top: 40px;
+    }
+
+    .line {
+        width: 160px;
+        border: 0.1px solid #000;
+    }
+
+    .footer {
+        height: 610px;
+        background: #c6aa8d;
+        background-image: url(../../../shared/assets/png/alimgress_bg_png.png);
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        margin-top: 100px;
+
+        position: relative;
+
+        .footer_first_block {
+            position: absolute;
+            margin-left: 90px;
+            margin-top: 75px;
+
+            .alimgress_logo {
+                width: 150px;
+            }
+
+            .alimgress_logo_txt {
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 32px;
+                margin-top: -16px;
+            }
+
+            .alimgress_desc_block {
+                padding-left: 31px;
+                padding-top: 4px;
+
+                .alimgress_desc {
+                    display: block;
+                    color: #636363;
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-top: 3px;
+                }
+            }
+
+            .alimgress_desc_block2 {
+                margin-left: 32px;
+                margin-top: 20px;
+
+                .alimgress_desc2 {
+                    display: block;
+                    color: #ffffff;
+                    font-size: 13px;
+                    margin-top: 3px;
+                }
+            }
+
+            .date {
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 500;
+                margin-left: 10%;
+                margin-top: 63%;
+            }
+        }
+
+        .footer_second_block {
+            display: flex;
+            margin-left: 380px;
+            padding-top: 88px;
+
+            .about_us_block {
+                list-style: none;
+
+                .about_item {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-top: 13px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .politics {
+                list-style: none;
+                margin-left: 20px;
+
+                .about_item {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-top: 13px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .networks_block {
+                list-style: none;
+                margin-left: 24px;
+
+                .about_item {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                .about_item2 {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-top: 13px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .text {
+        color: #f47b50;
+        font-family: "Tinos", serif;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .footer_latest_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 631px;
+        margin-top: 228px;
+
+        .desc_item {
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        .desc_item2 {
+            color: #ffffff;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+    }
+
 }

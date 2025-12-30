@@ -33,3 +33,137 @@
         }
     }
 }
+
+
+
+@media (max-width: 1280px) {
+    .aboutus {
+
+        .about_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .about_logo {
+                font-size: 26px;
+                margin-top: 112px;
+            }
+
+            .about_desc {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+
+                .desc_item {
+                    display: block;
+                    font-size: 14px;
+                    margin-top: 3px;
+
+                }
+
+                .video_ceramics {
+                    width: 570px;
+                    height: 344px;
+                    margin-top: 25px;
+                }
+
+                .about_ceramics {
+                    color: #636363;
+                    font-size: 12px;
+                    margin-right: 462px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .aboutus {
+
+        .about_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .about_logo {
+                font-size: 20px;
+                margin-top: 112px;
+            }
+
+            .about_desc {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+
+                .desc_item {
+                    display: block;
+                    font-size: 13px;
+                    margin-top: 3px;
+
+                }
+
+                .video_ceramics {
+                    width: 500px;
+                    height: 300px;
+                    margin-top: 25px;
+                }
+
+                .about_ceramics {
+                    color: #636363;
+                    font-size: 11px;
+                    margin-right: 402px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    .aboutus {
+
+        .about_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .about_logo {
+                font-size: 15px;
+                margin-top: 112px;
+            }
+
+            .about_desc {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+
+                .desc_item {
+                    display: block;
+                    font-size: 11px;
+                    margin-top: 3px;
+
+                }
+
+                .video_ceramics {
+                    width: 350px !important;
+                    height: 180px !important;
+                    margin-top: 25px;
+                }
+
+                .about_ceramics {
+                    color: #636363;
+                    font-size: 9px;
+                    margin-right: 268px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
 .navbar {
 
     .navbar_body {
-        width: 1519px;
+        width: 1839px;
         height: 117px;
-        
+
         .navbar_up {
             height: 35px;
             background: #b89571;
@@ -16,7 +16,7 @@
                 top: 0;
                 color: #ffffff;
                 font-size: 13.5px;
-                margin-left: 120px;
+                margin-left: 250px;
                 margin-top: 8px;
             }
         }
@@ -33,7 +33,7 @@
             .phone_icon {
                 width: 13px;
                 height: 13px;
-                margin-left: 1070px;
+                margin-left: 1220px;
             }
 
             .phone_number {
@@ -74,9 +74,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 16px;
-                margin-left: 330px;
-                margin-top: -24px;
+                gap: 20px;
+                margin-left: 290px;
+                margin-top: -20px;
 
                 .nav_item {
                     color: #000;
@@ -105,4 +105,344 @@
 
 .active {
     text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .navbar {
+
+        .navbar_body {
+            width: 1839px;
+            height: 117px;
+
+            .navbar_up {
+                height: 35px;
+                background: #b89571;
+
+                position: relative;
+
+                .navbar_up_logo {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #ffffff;
+                    font-size: 13.5px;
+                    margin-left: 120px;
+                    margin-top: 8px;
+                }
+            }
+
+            .contact_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: -2px;
+
+                .phone_icon {
+                    width: 13px;
+                    height: 13px;
+                    margin-left: 830px;
+                }
+
+                .phone_number {
+                    color: #ffffff;
+                    font-size: 13px;
+                    margin-left: 6px;
+                }
+
+                .line {
+                    height: 14px;
+                    border: 0.1px solid #ffffff;
+                    margin-left: 5px;
+                }
+
+                .message_icon {
+                    width: 16px;
+                    height: 14px;
+                    margin-left: 6px;
+                }
+
+                .email {
+                    color: #ffffff;
+                    font-size: 14px;
+                    margin-left: 4px;
+                    margin-top: -4px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .navbar_down {
+                height: 82px;
+                background: #f4e5d7;
+
+                .navigation_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-left: -355px;
+                    margin-top: -12px;
+
+                    .nav_item {
+                        color: #000;
+                        font-size: 15px;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .nav_item3 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 4px;
+                    }
+
+                    .nav_item4 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .navbar {
+
+        .navbar_body {
+            width: 1209px;
+            height: 117px;
+
+            .navbar_up {
+                height: 33px;
+                background: #b89571;
+
+                position: relative;
+
+                .navbar_up_logo {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    margin-left: 100px;
+                    margin-top: 9px;
+                }
+            }
+
+            .contact_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-left: -240px;
+                margin-top: -2px;
+
+                .phone_icon {
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 830px;
+                }
+
+                .phone_number {
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    margin-left: 6px;
+                }
+
+                .line {
+                    height: 14px;
+                    border: 0.1px solid #ffffff;
+                    margin-left: 5px;
+                }
+
+                .message_icon {
+                    width: 16px;
+                    height: 14px;
+                    margin-left: 6px;
+                }
+
+                .email {
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    margin-left: 4px;
+                    margin-top: -4px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .navbar_down {
+                height: 74px;
+                background: #f4e5d7;
+
+                .navigation_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 21px;
+                    margin-left: -216px;
+                    margin-top: -12px;
+
+                    .nav_item {
+                        color: #000;
+                        font-size: 14px;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .nav_item3 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 4px;
+                    }
+
+                    .nav_item4 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 412px) {
+
+    .menu {
+        border: 4px solid red;
+        width: 10px;
+        height: 20px;
+    }
+
+    .navbar {
+
+        .navbar_body {
+            width: 1209px;
+            height: 117px;
+
+            .navbar_up {
+                height: 33px;
+                background: #b89571;
+
+                position: relative;
+
+                .navbar_up_logo {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #ffffff;
+                    font-size: 11px;
+                    margin-left: 130px;
+                    margin-top: 9px;
+                }
+            }
+
+            .contact_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-left: -240px;
+                margin-top: -2px;
+
+                .phone_icon {
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 830px;
+                }
+
+                .phone_number {
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    margin-left: 6px;
+                }
+
+                .line {
+                    height: 14px;
+                    border: 0.1px solid #ffffff;
+                    margin-left: 5px;
+                }
+
+                .message_icon {
+                    width: 16px;
+                    height: 14px;
+                    margin-left: 6px;
+                }
+
+                .email {
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    margin-left: 4px;
+                    margin-top: -4px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .navbar_down {
+                height: 74px;
+                background: #f4e5d7;
+
+                .navigation_block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 21px;
+                    margin-left: -216px;
+                    margin-top: -12px;
+
+                    .nav_item {
+                        color: #000;
+                        font-size: 14px;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .nav_item3 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 4px;
+                    }
+
+                    .nav_item4 {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

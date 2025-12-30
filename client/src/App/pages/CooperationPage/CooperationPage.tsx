@@ -7,38 +7,38 @@ export const CooperationPage = () => {
   return (
     <div className={cls.cooperation}>
       <div className='container'>
-        <Navbar/>
+        <Navbar />
 
         <div className={cls.cooperation_body}>
-            <Text as='h1' fz={44} fw={400}>Сотрудничество</Text>
-            <span className={cls.cooperation_desc1}>Сотрудничество — предлагаем индивидуальные модели сотрудничества</span>
-            <span className={cls.cooperation_desc2}>для дилеров, дизайнеров, архитекторов и строителей.</span>
+          <Text className={cls.cooperation_logo} as='h1' fz={44} fw={400}>Сотрудничество</Text>
+          <span className={cls.cooperation_desc1}>Сотрудничество — предлагаем индивидуальные модели сотрудничества</span>
+          <span className={cls.cooperation_desc2}>для дилеров, дизайнеров, архитекторов и строителей.</span>
 
-            <div className={cls.direction_cooperation}>
-                <Text as='h5' fz={18} fw={700}>Выберите одно из направление сотрудничества:</Text>
+          <div className={cls.direction_cooperation}>
+            <Text className={cls.direction_cooperation_logo} as='h5' fz={18} fw={700}>Выберите одно из направление сотрудничества:</Text>
 
-               <div className={cls.cooperation_block}>
-                 <div>
-                    <img className={cls.img} src="https://maimoonceramica.ru/wp-content/uploads/2025/01/dileram.webp" alt="" />
-                    <AppLink className={cls.cooperation_link} to="/dealers:auth">
-                    <span className={cls.cooperation_link}>Дилерам</span>
-                    </AppLink>
-                </div>
-                <div>
-                    <img className={cls.img2} src="https://maimoonceramica.ru/wp-content/uploads/2025/01/dizajneram-arhitektoram-stroitelyam.webp" alt="" />
-                    <div className={cls.link_block}>
-                      <AppLink className={cls.cooperation_link2} to="/designers:others">
-                    <span className={cls.cooperation_link2}>Дизайнерам, архитекторам 
-                    <span className={cls.cooperation_link3}>и строителям</span>
+            <div className={cls.cooperation_block}>
+              <div>
+                <img className={cls.img} src="https://maimoonceramica.ru/wp-content/uploads/2025/01/dileram.webp" alt="" />
+                <AppLink className={cls.cooperation_link} to="/dealers:auth">
+                  <span className={cls.cooperation_link}>Дилерам</span>
+                </AppLink>
+              </div>
+              <div>
+                <img className={cls.img2} src="https://maimoonceramica.ru/wp-content/uploads/2025/01/dizajneram-arhitektoram-stroitelyam.webp" alt="" />
+                <div className={cls.link_block}>
+                  <AppLink className={cls.cooperation_link2} to="/designers:others">
+                    <span className={cls.cooperation_link2}>Дизайнерам, архитекторам
+                      <span className={cls.cooperation_link3}>и строителям</span>
                     </span>
-                    </AppLink>
-                    </div>
+                  </AppLink>
                 </div>
-               </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )

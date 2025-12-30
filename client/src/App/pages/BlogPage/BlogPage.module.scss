@@ -88,3 +88,199 @@
         }
     }
 }
+
+
+
+@media (max-width: 1280px) {
+    .blog {
+
+        .blog_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .blog_logo {
+                font-size: 26px;
+                margin-top: 112px;
+            }
+
+            .blog_category {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                gap: 15px;
+
+                .blog_ceramica {
+                    width: 155px;
+                    height: 34px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_ceramica_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .blog_news {
+                    width: 105px;
+                    height: 34px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_news_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .blog_useful {
+                    width: 113px;
+                    height: 34px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_useful_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .num {
+                    color: #663300;
+                    font-weight: 400;
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .blog {
+
+        .blog_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .blog_logo {
+                font-size: 20px;
+                margin-top: 112px;
+            }
+
+            .blog_category {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                gap: 15px;
+
+                .blog_ceramica {
+                    width: 155px;
+                    height: 31px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_ceramica_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .blog_news {
+                    width: 105px;
+                    height: 31px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_news_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .blog_useful {
+                    width: 113px;
+                    height: 31px;
+                    border-radius: 8px;
+                    background: #f4e5d7;
+
+                    .blog_useful_txt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 6px;
+
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .num {
+                    color: #663300;
+                    font-weight: 400;
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
